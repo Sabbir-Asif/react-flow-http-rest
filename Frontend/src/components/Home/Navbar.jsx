@@ -6,7 +6,7 @@ const Navbar = () => {
                 className="w-36 m-2"/>
             </span>
             <div className="flex-grow text-center">
-                <h2 className="font-semibold text-3xl font-poppins italic text-gray-700">Evolution of Internet Protocols</h2>
+                <h2 className="font-semibold text-3xl font-ruhi italic text-gray-700">Evolution of Internet Protocols</h2>
             </div>
         </div>
     );
