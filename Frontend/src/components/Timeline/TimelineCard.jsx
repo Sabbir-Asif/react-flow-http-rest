@@ -1,21 +1,25 @@
-
 const TimelineCard = ({ cardData, handleOpenDrawer }) => {
-    const handleExplore = () => {
-        if (cardData?.filePath) {
-            handleOpenDrawer(cardData.filePath);
-        }
-    };
-    
-    return (
-      <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 border border-black">
-        <div className="h-1 bg-gradient-to-r from-blue-primary to-green-primary"></div>
-        <div className="card-body p-6">
-          <h2 className="card-title text-sm font-bold text-neutral-800 mb-3">
+  const handleExplore = () => {
+    if (cardData?.filePath) {
+      handleOpenDrawer(cardData.filePath);
+    }
+  };
+  
+  return (
+    <div className="relative w-64">
+      <div className="absolute -top-1 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-t-xl"></div>
+      
+      <div className="card bg-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden pt-1 mt-0">
+        <div className="card-body p-2">
+          <h2 className="text-sm font-bold text-gray-800 line-clamp-2 mb-2">
             {cardData?.event}
           </h2>
-          <div className="card-actions justify-end mt-2">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-mono font-semibold text-blue-500">
+              {cardData?.year}
+            </span>
             <button 
-              className="btn border-1 border-yellow-500 hover:text-white text-yellow-600 hover:bg-yellow-500 hover:opacity-90 px-4 rounded-full"
+              className="btn btn-sm bg-amber-500 hover:bg-amber-600 text-white border-none rounded-full px-3 py-1 text-xs"
               onClick={handleExplore}
               disabled={!cardData?.filePath}
             >
@@ -24,7 +28,8 @@ const TimelineCard = ({ cardData, handleOpenDrawer }) => {
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default TimelineCard;
+    </div>
+  );
+};
+
+export default TimelineCard;
