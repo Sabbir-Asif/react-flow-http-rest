@@ -8,7 +8,6 @@ import remarkFrontmatter from 'remark-frontmatter';
 import remarkDirective from 'remark-directive';
 import { visit } from 'unist-util-visit';
 
-// Custom plugin to extract and handle styles in markdown
 const remarkExtractStyles = () => {
   return (tree, file) => {
     const styles = [];
