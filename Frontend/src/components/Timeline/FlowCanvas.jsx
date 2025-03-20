@@ -47,7 +47,7 @@ const FlowCanvas = () => {
         zoomOnPinch={false}
         zoomOnDoubleClick={false}
         fitView={false}
-        preventScrolling={true}
+        preventScrolling={false}
         disableKeyboardA11y={true}
         autoPanOnNodeDrag={false}
         panOnDrag={false}

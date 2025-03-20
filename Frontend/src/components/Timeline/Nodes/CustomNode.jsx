@@ -11,7 +11,7 @@ const CustomNode = ({ data }) => {
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
-                <div className="font-semibold text-md text-gray-800">{data.label}</div>
+                <div className="font-semibold text-md font-merienda text-gray-800">{data.label}</div>
                 <div className='flex justify-between'>
                     {
                         data.year && (
