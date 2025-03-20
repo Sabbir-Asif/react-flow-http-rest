@@ -25,7 +25,7 @@ export const initialNodes = [
     type: 'customNode',
     position: { x: 126, y: 85 },
     data: { 
-      label: 'Stateless',
+      label: 'Connection',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -65,7 +65,7 @@ export const initialNodes = [
     type: 'customNode',
     position: { x: 900, y: 180 },
     data: { 
-      label: 'Stateless', 
+      label: 'Connection', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
