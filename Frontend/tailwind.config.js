@@ -15,7 +15,8 @@ export default {
       fontFamily: {
         koulen: 'Koulen',
         merienda: 'Merienda',
-        ruhi: 'Frank Ruhl Libre'
+        ruhi: 'Frank Ruhl Libre',
+        nunito: 'Nunito Sans',
       }
     }
   },
