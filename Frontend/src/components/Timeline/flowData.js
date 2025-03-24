@@ -1,4 +1,3 @@
-import { version } from "react";
 
 export const initialNodes = [
   {
@@ -12,77 +11,7 @@ export const initialNodes = [
       filePath: '/content/HTTP/0.9.md', 
     },
   },
-  {
-    id: '1.1',
-    type: 'http',
-    position: { x: 126, y: 20 },
-    data: { 
-      label: 'HTTP',
-      version: '0.9',
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '1.2',
-    type: 'connection',
-    position: { x: 126, y: 85 },
-    data: { 
-      label: 'Connection',
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '2',
-    type: 'eventNode',
-    position: { x: 656, y: 150 },
-    data: { 
-      label: 'HTTP/1.0',
-      year: '1996',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '2.1',
-    type: 'customNode',
-    position: { x: 900, y: 50 },
-    data: { 
-      label: 'Methods', 
-      description: 'This is the first node',
-      filePath: '/data/markdown.md', 
-    },
-  },
-  {
-    id: '2.2',
-    type: 'customNode',
-    position: { x: 900, y: 115 },
-    data: { 
-      label: 'Headers', 
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '2.3',
-    type: 'customNode',
-    position: { x: 900, y: 180 },
-    data: { 
-      label: 'Connection', 
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '2.4',
-    type: 'customNode',
-    position: { x: 900, y: 245 },
-    data: { 
-      label: 'Mime Type', 
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
+  
 ];
 
 export const initialEdges = [
