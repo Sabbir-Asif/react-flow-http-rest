@@ -25,7 +25,7 @@ export const initialNodes = [
   },
   {
     id: '1.2',
-    type: 'customNode',
+    type: 'connection',
     position: { x: 126, y: 85 },
     data: { 
       label: 'Connection',
