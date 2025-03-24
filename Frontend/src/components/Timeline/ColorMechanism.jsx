@@ -2,22 +2,23 @@ import React from 'react';
 
 const ColorMechanism = () => {
   const colorMechanisms = [
-    { color: 'bg-red-500', mechanism: 'Error Handling' },
-    { color: 'bg-blue-500', mechanism: 'Data Fetching' },
-    { color: 'bg-green-500', mechanism: 'Success States' },
-    { color: 'bg-yellow-500', mechanism: 'Warnings' },
-    { color: 'bg-pink-500', mechanism: 'User Interactions' },
-    { color: 'bg-indigo-500', mechanism: 'Navigation' },
-    { color: 'bg-gray-500', mechanism: 'Disabled States' },
+    { color: 'bg-[#DECFB9]', mechanism: 'CORS' },
+    { color: 'bg-[#EAE79B]', mechanism: 'Cookies' },
+    { color: 'bg-[#F8AA38]', mechanism: 'Connection' },
+    { color: 'bg-[#C2EAAE]', mechanism: 'Method' },
+    { color: 'bg-[#B7E7E5]', mechanism: 'Header' },
+    { color: 'bg-[#98C9FE]', mechanism: 'Status Code' },
+    { color: 'bg-[#E5D1E3]', mechanism: 'Caching' },
+    { color: 'bg-[#D3D3D3]', mechanism: 'Event' },
   ];
 
   return (
-    <div className="p-3 w-48 mr-4 h-96 my-32 bg-white rounded-lg shadow-md border border-gray-200">
-      <div className="space-y-2">
+    <div className=" p-3 w-52 mr-4 h-72 my-32 bg-white rounded-lg shadow-md border border-4 border-solid border-black ">
+      <div className="flex flex-col space-y-2 ">
         {colorMechanisms.map((item, index) => (
           <div key={index} className="flex items-center">
-            <div className={`w-4 h-4 ${item.color} mr-2`}></div> {/* Small square color indicator */}
-            <div className="text-xs text-gray-700">
+            <div className={`w-10 h-2 rounded-lg ${item.color} mr-2`}></div> {/* Small square color indicator */}
+            <div className="text-base font-bold  text-gray-700">
               <span>{item.mechanism}</span>
             </div>
           </div>
