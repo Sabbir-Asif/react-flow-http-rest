@@ -3,7 +3,7 @@ export const initialNodes = [
   {
     id: '0',
     type: 'pointNode',
-    position: { x: 497, y: 100 },
+    position: { x: 507, y: 100 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -14,7 +14,7 @@ export const initialNodes = [
   {
     id: '0.1',
     type: 'customNode',
-    position: { x: 459, y: 192 },
+    position: { x: 469, y: 192 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -25,7 +25,7 @@ export const initialNodes = [
   {
     id: '1',
     type: 'yearNode',
-    position: { x: 436, y: 272 },
+    position: { x: 446, y: 272 },
     data: { 
       label: '1990',
       year: '1990', 
@@ -36,7 +36,7 @@ export const initialNodes = [
   {
     id: '1.1',
     type: 'http',
-    position: { x: 603, y: 383 },
+    position: { x: 613, y: 383 },
     data: { 
       label: 'HTTP',
       version: '0.9',
@@ -48,7 +48,7 @@ export const initialNodes = [
   {
     id: '1.1.1',
     type: 'connection',
-    position: { x: 843, y: 287 },
+    position: { x: 853, y: 287 },
     data: { 
       label: 'Non Persistent',
       description: 'This is the first node',
@@ -58,7 +58,7 @@ export const initialNodes = [
   {
     id: '1.1.2',
     type: 'method',
-    position: { x: 921, y: 394 },
+    position: { x: 931, y: 394 },
     data: { 
       label: 'GET Method Introduced',
       description: 'This is the first node',
@@ -68,7 +68,7 @@ export const initialNodes = [
   {
     id: '1^1.1',
     type: 'pointNode',
-    position: { x: 493, y: 399 },
+    position: { x: 503, y: 399 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -101,7 +101,7 @@ export const initialNodes = [
   {
     id: '1^1.2',
     type: 'pointNode',
-    position: { x: 491, y: 453 },
+    position: { x: 501, y: 453 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -112,7 +112,7 @@ export const initialNodes = [
   {
     id: '2',
     type: 'yearNode',
-    position: { x: 436, y: 526 },
+    position: { x: 446, y: 526 },
     data: { 
       label: '1995',
       year: '1995', 
@@ -194,12 +194,85 @@ export const initialNodes = [
     },
   },
   {
+    id: '2.3',
+    type: 'http',
+    position: { x: 310, y: 938 },
+    data: { 
+      label: 'HTTP',
+      version: '1.1',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2.3.1',
+    type: 'connection',
+    position: { x: 134, y: 753 },
+    data: { 
+      label: 'Persistent',
+      additional: '(by default)',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2.3.2',
+    type: 'header',
+    position: { x: 2, y: 857 },
+    data: { 
+      additional: 'Connection,Cache-Control,Expires,Host,Encodings',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2.3.3',
+    type: 'statusCode',
+    position: { x: 14, y: 954 },
+    data: { 
+      additional: 'Connection,Cache-Control,Expires,Host,Encodings',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2.3.4',
+    type: 'caching',
+    position: { x: 45, y: 1055 },
+    data: { 
+      additional: 'Cache-Control,Directives,ETag,Last-Modified,Vary',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2.3.5',
+    type: 'cookies',
+    position: { x: 260, y: 1053 },
+    data: { 
+      additional: 'Cookie, Set-Cookie',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '3',
     type: 'yearNode',
-    position: { x: 436, y: 1126 },
+    position: { x: 446, y: 1136 },
     data: { 
       label: '2000',
       year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4',
+    type: 'yearNode',
+    position: { x: 446, y: 1660 },
+    data: { 
+      label: '2005',
+      year: '2005', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -297,6 +370,18 @@ export const initialEdges = [
     source: '2',
     sourceHandle: 'bottom',
     target: '3',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e3-4',
+    source: '3',
+    sourceHandle: 'bottom',
+    target: '4',
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
