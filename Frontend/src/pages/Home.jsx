@@ -8,14 +8,13 @@ const Home = () => {
     return (
         <div className="">
             <Navbar />
-            <div className="flex container mx-auto max-w-7xl">
-            <ColorMechanism/>
-            <div className="">
+            <div className="container mx-auto">
                 <Header />
-                <FlowCanvas />
+                <div className="flex">
+                    <ColorMechanism />
+                    <FlowCanvas />
+                </div>
             </div>
-            </div>
-           
         </div>
     );
 };
