@@ -12,12 +12,12 @@ const ColorMechanism = () => {
   ];
 
   return (
-    <div className="p-3 w-48 mr-4 h-96 my-32 bg-white rounded-lg shadow-md border border-gray-200">
-      <div className="space-y-2">
+    <div className=" p-3 w-52 mr-4 h-72 my-32 bg-white rounded-lg shadow-md border border-4 border-solid border-black ">
+      <div className="flex flex-col space-y-2 ">
         {colorMechanisms.map((item, index) => (
           <div key={index} className="flex items-center">
-            <div className={`w-4 h-4 ${item.color} mr-2`}></div> {/* Small square color indicator */}
-            <div className="text-xs text-gray-700">
+            <div className={`w-10 h-2 rounded-lg ${item.color} mr-2`}></div> {/* Small square color indicator */}
+            <div className="text-base font-bold  text-gray-700">
               <span>{item.mechanism}</span>
             </div>
           </div>
