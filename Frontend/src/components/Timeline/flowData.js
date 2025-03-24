@@ -32,7 +32,7 @@ export const initialNodes = [
   },
   {
     id: '2',
-    type: 'customNode',
+    type: 'eventNode',
     position: { x: 656, y: 150 },
     data: { 
       label: 'HTTP/1.0',

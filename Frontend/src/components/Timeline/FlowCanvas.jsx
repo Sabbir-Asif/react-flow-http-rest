@@ -4,9 +4,13 @@ import '@xyflow/react/dist/style.css';
 import CustomNode from './Nodes/CustomNode';
 import { initialNodes, initialEdges } from './flowData';
 import Drawer from './Drawer';
+import YearNode from './Nodes/YearNode';
+import EventNode from './Nodes/EventNode';
 
 const nodeTypes = {
   customNode: CustomNode,
+  yearNode: YearNode,
+  eventNode: EventNode,
 };
 
 const FlowCanvas = () => {
