@@ -1,7 +1,9 @@
+import Footer from "../components/Home/Footer";
 import Header from "../components/Home/Header";
 import Navbar from "../components/Home/Navbar";
 import ColorMechanism from "../components/Timeline/ColorMechanism";
 import FlowCanvas from "../components/Timeline/FlowCanvas";
+
 
 const Home = () => {
     return (
@@ -19,6 +21,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
