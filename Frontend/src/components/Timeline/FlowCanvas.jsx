@@ -7,12 +7,26 @@ import Drawer from './Drawer';
 import YearNode from './Nodes/YearNode';
 import EventNode from './Nodes/EventNode';
 import HTTP from './Nodes/HTTP';
+import Connection from './Nodes/Conenction';
+import Cookies from './Nodes/Cookies';
+import Cors from './Nodes/Cors';
+import Method from './Nodes/Method';
+import Header from '../Home/Header';
+import StatusCode from './Nodes/StatusCode';
+import Caching from './Nodes/Caching';
 
 const nodeTypes = {
   customNode: CustomNode,
   yearNode: YearNode,
   eventNode: EventNode,
   http: HTTP,
+  connection: Connection,
+  cookies: Cookies,
+  cors: Cors,
+  method: Method,
+  header: Header,
+  statusCode: StatusCode,
+  caching: Caching
 };
 
 const FlowCanvas = () => {
@@ -60,7 +74,7 @@ const FlowCanvas = () => {
         dragOnlyNodes={false}
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#F7F7F7" variant="dots" gap={0} size={0} />
+        <Background color="#FFFFFF" variant="dots" gap={0} size={0} />
       </ReactFlow>
       
       <Drawer 
