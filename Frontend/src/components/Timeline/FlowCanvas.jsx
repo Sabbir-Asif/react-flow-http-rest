@@ -74,7 +74,7 @@ const FlowCanvas = () => {
         dragOnlyNodes={false}
         proOptions={{ hideAttribution: true }}
       >
-        <Background color="#F7F7F7" variant="dots" gap={0} size={0} />
+        <Background color="#FFFFFF" variant="dots" gap={0} size={0} />
       </ReactFlow>
       
       <Drawer 
