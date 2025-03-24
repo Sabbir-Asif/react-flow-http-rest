@@ -11,7 +11,7 @@ import Connection from './Nodes/Conenction';
 import Cookies from './Nodes/Cookies';
 import Cors from './Nodes/Cors';
 import Method from './Nodes/Method';
-import Header from '../Home/Header';
+import Header from './Nodes/Header';
 import StatusCode from './Nodes/StatusCode';
 import Caching from './Nodes/Caching';
 import PointNode from './Nodes/PointNode';
@@ -42,48 +42,46 @@ const FlowCanvas = () => {
       setSelectedFilePath(node.data.filePath);
       setDrawerOpen(true);
     } else {
-
       alert(`No content for this node`);
     }
   };
-  
+
   const closeDrawer = () => {
     setDrawerOpen(false);
   };
-  
+
   return (
-    <div className="w-full h-screen overflow-y-auto">
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        nodeTypes={nodeTypes}
-        onNodeClick={onNodeClick}
-        defaultViewport={{ x: 0, y: 0, zoom: 1 }}
-        minZoom={1}
-        maxZoom={1}
-        nodesDraggable={false}
-        nodesConnectable={false}
-        elementsSelectable={false}
-        panOnScroll={false}
-        zoomOnScroll={false}
-        zoomOnPinch={false}
-        zoomOnDoubleClick={false}
-        fitView={false}
-        preventScrolling={false}
-        disableKeyboardA11y={true}
-        autoPanOnNodeDrag={false}
-        panOnDrag={false}
-        dragOnlyNodes={false}
-        proOptions={{ hideAttribution: true }}
-      >
-        <Background color="#FFFFFF" variant="dots" gap={0} size={0} />
-      </ReactFlow>
-      
-      <Drawer 
-        isOpen={drawerOpen} 
-        onClose={closeDrawer} 
-        filePath={selectedFilePath} 
-      />
+    <div className="w-full relative" style={{ minHeight: '2000px' }}>
+      <div className="relative w-full h-[2000px]">
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          nodeTypes={nodeTypes}
+          onNodeClick={onNodeClick}
+          defaultViewport={{ x: 0, y: 0, zoom: 1 }}
+          minZoom={1}
+          maxZoom={1}
+          nodesDraggable={false}
+          nodesConnectable={false}
+          elementsSelectable={false}
+          panOnScroll={false}
+          zoomOnScroll={false}
+          zoomOnPinch={false}
+          zoomOnDoubleClick={false}
+          fitView={false}
+          preventScrolling={false}
+          disableKeyboardA11y={true}
+          autoPanOnNodeDrag={false}
+          panOnDrag={false}
+          dragOnlyNodes={false}
+          proOptions={{ hideAttribution: true }}
+          style={{ width: '100%', height: '100%' }} // Ensure ReactFlow gets proper dimensions
+        >
+          <Background color="#FFFFFF" variant="dots" gap={0} size={0} />
+        </ReactFlow>
+      </div>
+
+      <Drawer isOpen={drawerOpen} onClose={closeDrawer} filePath={selectedFilePath} />
     </div>
   );
 };

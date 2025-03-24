@@ -13,10 +13,7 @@ const EventNode = ({ data }) => {
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
                 
                 {/* Content */}
-                <div className="font-semibold text-md text-gray-800 text-center">{data.label}</div>
-                {data.year && (
-                    <div className="font-mono text-sm text-gray-600 mt-1">{data.year}</div>
-                )}
+                <div className="font-semibold text-sm text-gray-800 text-center">{data.label}</div>
                 
                 <Handle type="source" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="source" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />

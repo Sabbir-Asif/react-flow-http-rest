@@ -3,13 +3,16 @@ import { Handle, Position } from '@xyflow/react';
 
 const Connection = ({ data }) => {
     return (
-        <div className='min-w-44'>
+        <div className='w-48'>
             <div className="p-4 border-black border-2 bg-[#DECFB9] rounded-lg shadow-md cursor-pointer">
                 <Handle type="target" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
-                <div className="font-semibold text-black font-nunito">{data.label}</div>
+                <div className="font-semibold text-black text-center font-nunito text-wrap">{data.label}</div>
+                {
+                    data.additional && <div className="text-xs text-black text-center font-nunito text-wrap">{data.additional}</div>
+                }
                 <Handle type="source" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="source" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="source" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
