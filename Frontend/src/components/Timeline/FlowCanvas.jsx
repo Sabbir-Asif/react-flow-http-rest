@@ -14,6 +14,7 @@ import Method from './Nodes/Method';
 import Header from '../Home/Header';
 import StatusCode from './Nodes/StatusCode';
 import Caching from './Nodes/Caching';
+import PointNode from './Nodes/PointNode';
 
 const nodeTypes = {
   customNode: CustomNode,
@@ -26,7 +27,8 @@ const nodeTypes = {
   method: Method,
   header: Header,
   statusCode: StatusCode,
-  caching: Caching
+  caching: Caching,
+  pointNode: PointNode,
 };
 
 const FlowCanvas = () => {
@@ -50,7 +52,7 @@ const FlowCanvas = () => {
   };
   
   return (
-    <div className="h-screen w-full overflow-y-auto">
+    <div className="w-full h-screen overflow-y-auto">
       <ReactFlow
         nodes={nodes}
         edges={edges}
