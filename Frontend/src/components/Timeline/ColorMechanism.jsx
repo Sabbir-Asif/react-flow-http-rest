@@ -12,7 +12,7 @@ const ColorMechanism = () => {
   ];
 
   return (
-    <div className="w-36 p-3 bg-white rounded-lg shadow-md border border-gray-200">
+    <div className="p-3 w-48 mr-4 h-96 my-32 bg-white rounded-lg shadow-md border border-gray-200">
       <div className="space-y-2">
         {colorMechanisms.map((item, index) => (
           <div key={index} className="flex items-center">
