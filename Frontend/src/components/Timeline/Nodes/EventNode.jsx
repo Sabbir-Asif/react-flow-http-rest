@@ -6,7 +6,6 @@ const EventNode = ({ data }) => {
         <div className='relative min-w-36'>
             <div className='absolute -top-1 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-t-lg'></div>
             <div className="p-2 border-gray-300 rounded-md shadow-md cursor-pointer">
-                {/* <Handle type="target" position={Position.Left} style={{ visibility: 'hidden' }} /> */}
                 <Handle type="target" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />

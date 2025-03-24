@@ -1,11 +1,11 @@
 export const initialNodes = [
   {
     id: '1',
-    type: 'customNode',
+    type: 'yearNode',
     position: { x: 370, y: 70 },
     data: { 
-      label: 'HTTP/0.9',
-      year: '1991', 
+      label: '1990',
+      year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
