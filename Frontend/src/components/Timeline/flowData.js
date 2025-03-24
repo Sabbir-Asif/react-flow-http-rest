@@ -1,3 +1,5 @@
+import { version } from "react";
+
 export const initialNodes = [
   {
     id: '1',
@@ -12,10 +14,11 @@ export const initialNodes = [
   },
   {
     id: '1.1',
-    type: 'customNode',
+    type: 'http',
     position: { x: 126, y: 20 },
     data: { 
-      label: 'Methods', 
+      label: 'HTTP',
+      version: '0.9',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },

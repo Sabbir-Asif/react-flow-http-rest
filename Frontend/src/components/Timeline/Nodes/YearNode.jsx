@@ -3,7 +3,7 @@ import { Handle, Position } from '@xyflow/react';
 
 const YearNode = ({ data }) => {
     return (
-        <div className='max-w-36'>
+        <div className=''>
             <div>
                 <Handle type="target" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />

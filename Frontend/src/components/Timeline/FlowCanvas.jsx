@@ -6,11 +6,13 @@ import { initialNodes, initialEdges } from './flowData';
 import Drawer from './Drawer';
 import YearNode from './Nodes/YearNode';
 import EventNode from './Nodes/EventNode';
+import HTTP from './Nodes/HTTP';
 
 const nodeTypes = {
   customNode: CustomNode,
   yearNode: YearNode,
   eventNode: EventNode,
+  http: HTTP,
 };
 
 const FlowCanvas = () => {
