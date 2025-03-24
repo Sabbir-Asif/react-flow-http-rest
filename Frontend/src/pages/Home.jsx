@@ -8,10 +8,10 @@ const Home = () => {
     return (
         <div className="">
             <Navbar />
-            <div className="container mx-auto max-w-8xl">
+            <div className="container mx-auto max-w-7xl">
                 <div className="flex">
                     <ColorMechanism />
-                    <div className="flex-grow">
+                    <div className="w-5xl">
                         <Header />
                         <FlowCanvas />
                     </div>
