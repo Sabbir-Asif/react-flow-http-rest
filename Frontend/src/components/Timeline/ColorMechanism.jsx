@@ -2,13 +2,14 @@ import React from 'react';
 
 const ColorMechanism = () => {
   const colorMechanisms = [
-    { color: 'bg-red-500', mechanism: 'Error Handling' },
-    { color: 'bg-blue-500', mechanism: 'Data Fetching' },
-    { color: 'bg-green-500', mechanism: 'Success States' },
-    { color: 'bg-yellow-500', mechanism: 'Warnings' },
-    { color: 'bg-pink-500', mechanism: 'User Interactions' },
-    { color: 'bg-indigo-500', mechanism: 'Navigation' },
-    { color: 'bg-gray-500', mechanism: 'Disabled States' },
+    { color: 'bg-red-500', mechanism: 'CORS' },
+    { color: 'bg-blue-500', mechanism: 'Cookies' },
+    { color: 'bg-green-500', mechanism: 'Connection' },
+    { color: 'bg-yellow-500', mechanism: 'Method' },
+    { color: 'bg-pink-500', mechanism: 'Header' },
+    { color: 'bg-indigo-500', mechanism: 'Status Code' },
+    { color: 'bg-gray-500', mechanism: 'Caching' },
+    { color: 'bg-pink-500', mechanism: 'Event' },
   ];
 
   return (
