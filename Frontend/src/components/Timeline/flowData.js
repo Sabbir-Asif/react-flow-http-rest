@@ -537,12 +537,34 @@ export const initialNodes = [
     },
   },
   {
+    id: '5^5.1',
+    type: 'pointNode',
+    position: { x: 501, y: 2130 },
+    data: { 
+      label: '',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '5.1',
     type: 'eventNode',
     position: { x: 631, y: 2080 },
     data: { 
       label: 'PATCH Method Introduced',
       year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5^5.2',
+    type: 'pointNode',
+    position: { x: 501, y: 2245 },
+    data: { 
+      label: '',
+      year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -603,6 +625,17 @@ export const initialNodes = [
     },
   },
   {
+    id: '6^6.1',
+    type: 'pointNode',
+    position: { x: 501, y: 2545 },
+    data: { 
+      label: '',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '6.1',
     type: 'http',
     position: { x: 285, y: 2530 },
@@ -634,6 +667,17 @@ export const initialNodes = [
       label: 'Persistent, Multiplexing',
       version: '2.0',
       year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6^6.2',
+    type: 'pointNode',
+    position: { x: 501, y: 2605 },
+    data: { 
+      label: '',
+      year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -698,6 +742,17 @@ export const initialNodes = [
     },
   },
   {
+    id: '7^7.1',
+    type: 'pointNode',
+    position: { x: 501, y: 2900 },
+    data: { 
+      label: '',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '7.1',
     type: 'eventNode',
     position: { x: 300, y: 2850 },
@@ -726,6 +781,17 @@ export const initialNodes = [
     data: { 
       label: 'Edge Caching Introduced',
       year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7^7.2',
+    type: 'pointNode',
+    position: { x: 502, y: 3020 },
+    data: { 
+      label: '',
+      year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -1251,6 +1317,42 @@ export const initialEdges = [
     animated: false,
   },
   {
+    id: '5.2-5.2.1',
+    source: '5.2',
+    sourceHandle: 'left',
+    target: '5.2.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '5^5.1-5.1',
+    source: '5^5.1',
+    sourceHandle: 'right',
+    target: '5.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '5^5.2-5.2',
+    source: '5^5.2',
+    sourceHandle: 'left',
+    target: '5.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
     id: 'e5-6',
     source: '5',
     sourceHandle: 'bottom',
@@ -1263,11 +1365,59 @@ export const initialEdges = [
     animated: false,
   },
   {
+    id: '6^6.2-6.2',
+    source: '6^6.2',
+    sourceHandle: 'right',
+    target: '6.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '6^6.1-6.1',
+    source: '6^6.1',
+    sourceHandle: 'left',
+    target: '6.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
     id: 'e6-7',
     source: '6',
     sourceHandle: 'bottom',
     target: '7',
     targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '7^7.2-7.2',
+    source: '7^7.2',
+    sourceHandle: 'right',
+    target: '7.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '7^7.1-7.1',
+    source: '7^7.1',
+    sourceHandle: 'left',
+    target: '7.1',
+    targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
