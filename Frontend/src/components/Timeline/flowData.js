@@ -311,6 +311,18 @@ export const initialNodes = [
     },
   },
   {
+    id: '3^3.1',
+    type: 'pointNode',
+    position: { x: 501, y: 1230 },
+    data: { 
+      label: '',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+
+  {
     id: '3.1.1',
     type: 'rest',
     position: { x: 700, y: 1110 },
@@ -355,6 +367,17 @@ export const initialNodes = [
     },
   },
   {
+    id: '3^3.2',
+    type: 'pointNode',
+    position: { x: 501, y: 1390 },
+    data: { 
+      label: '',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '3.2.1',
     type: 'cookies',
     position: { x: 100, y: 1249 },
@@ -381,7 +404,7 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 20, y: 1445 },
     data: { 
-      label: 'User Preferences',
+      label: 'httpOnly',
       year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
@@ -390,9 +413,9 @@ export const initialNodes = [
   {
     id: '3.2.4',
     type: 'cookies',
-    position: { x: 120, y: 1525 },
+    position: { x: 160, y: 1525 },
     data: { 
-      label: 'User Preferences',
+      label: 'Secure Flag',
       year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
@@ -421,6 +444,17 @@ export const initialNodes = [
     },
   },
   {
+    id: '4^4.1',
+    type: 'pointNode',
+    position: { x: 501, y: 1675 },
+    data: { 
+      label: 'JSONP Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '4.2',
     type: 'eventNode',
     position: { x: 640, y: 1765 },
@@ -432,9 +466,20 @@ export const initialNodes = [
     },
   },
   {
+    id: '4^4.2',
+    type: 'pointNode',
+    position: { x: 501, y: 1810 },
+    data: { 
+      label: 'JSONP Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '4.3',
     type: 'eventNode',
-    position: { x: 290, y: 1765 },
+    position: { x: 290, y: 1805 },
     data: { 
       label: 'CORS Introduced',
       year: '2005', 
@@ -443,9 +488,20 @@ export const initialNodes = [
     },
   },
   {
+    id: '4^4.3',
+    type: 'pointNode',
+    position: { x: 501, y: 1850 },
+    data: { 
+      label: 'JSONP Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '4.3.1',
     type: 'header',
-    position: { x: 50, y: 1700 },
+    position: { x: 50, y: 1740 },
     data: { 
       label: 'Access-Control-Allow-Origin',
       year: '2005', 
@@ -456,7 +512,7 @@ export const initialNodes = [
   {
     id: '4.3.2',
     type: 'cors',
-    position: { x: 50, y: 1850 },
+    position: { x: 50, y: 1890 },
     data: { 
       label: 'CORS Introduced',
       year: '2005', 
@@ -682,6 +738,234 @@ export const initialEdges = [
       stroke: '#333333' 
     },
     animated: false,
+  },
+  {
+    id: '2.3-2.3.1',
+    source: '2.3',
+    sourceHandle: 'top',
+    target: '2.3.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '2.3-2.3.2',
+    source: '2.3',
+    sourceHandle: 'left',
+    target: '2.3.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '2.3-2.3.3',
+    source: '2.3',
+    sourceHandle: 'left',
+    target: '2.3.3',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '2.3-2.3.4',
+    source: '2.3',
+    sourceHandle: 'left',
+    target: '2.3.4',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '2.3-2.3.5',
+    source: '2.3',
+    sourceHandle: 'bottom',
+    target: '2.3.5',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3^3.1-3.1',
+    source: '3^3.1',
+    sourceHandle: 'right',
+    target: '3.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '3.1-3.1.1',
+    source: '3.1',
+    sourceHandle: 'top',
+    target: '3.1.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3.1-3.1.2',
+    source: '3.1',
+    sourceHandle: 'right',
+    target: '3.1.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3.1-3.1.3',
+    source: '3.1',
+    sourceHandle: 'bottom',
+    target: '3.1.3',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3^3.2-3.2',
+    source: '3^3.2',
+    sourceHandle: 'left',
+    target: '3.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '3.2-3.2.1',
+    source: '3.2',
+    sourceHandle: 'left',
+    target: '3.2.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3.2-3.2.2',
+    source: '3.2',
+    sourceHandle: 'left',
+    target: '3.2.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3.2-3.2.3',
+    source: '3.2',
+    sourceHandle: 'left',
+    target: '3.2.3',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '3.2-3.2.4',
+    source: '3.2',
+    sourceHandle: 'left',
+    target: '3.2.4',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '4^4.1-4.1',
+    source: '4^4.1',
+    sourceHandle: 'right',
+    target: '4.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '4^4.2-4.2',
+    source: '4^4.2',
+    sourceHandle: 'right',
+    target: '4.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '4^4.3-4.3',
+    source: '4^4.3',
+    sourceHandle: 'left',
+    target: '4.3',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: '4.3-4.3.1',
+    source: '4.3',
+    sourceHandle: 'left',
+    target: '4.3.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '4.3-4.3.2',
+    source: '4.3',
+    sourceHandle: 'left',
+    target: '4.3.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
   },
   {
     id: 'e3-4',
