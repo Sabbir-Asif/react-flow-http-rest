@@ -444,8 +444,9 @@ export const initialNodes = [
     data: { 
       label: 'JSONP Introduced',
       year: '2005', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/CORS/4.1.IntroduceJSONP.md', 
     },
   },
   {
