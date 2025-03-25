@@ -10,6 +10,7 @@ const ColorMechanism = () => {
     { color: 'bg-[#98C9FE]', mechanism: 'Status Code' },
     { color: 'bg-[#E5D1E3]', mechanism: 'Caching' },
     { color: 'bg-[#D3D3D3]', mechanism: 'Event' },
+    { color: 'bg-[#dfb2b2]', mechanism: 'REST' },
   ];
 
   return (
