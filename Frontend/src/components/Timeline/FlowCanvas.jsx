@@ -15,6 +15,7 @@ import Header from './Nodes/Header';
 import StatusCode from './Nodes/StatusCode';
 import Caching from './Nodes/Caching';
 import PointNode from './Nodes/PointNode';
+import Rest from './Nodes/Rest';
 
 const nodeTypes = {
   customNode: CustomNode,
@@ -29,6 +30,7 @@ const nodeTypes = {
   statusCode: StatusCode,
   caching: Caching,
   pointNode: PointNode,
+  rest: Rest
 };
 
 const FlowCanvas = () => {

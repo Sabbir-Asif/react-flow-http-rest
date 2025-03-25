@@ -132,6 +132,17 @@ export const initialNodes = [
     },
   },
   {
+    id: '2^2.1',
+    type: 'pointNode',
+    position: { x: 501, y: 645 },
+    data: { 
+      label: 'HTTP',
+      year: '1990', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '2.2',
     type: 'http',
     position: { x: 628, y: 649 },
@@ -189,6 +200,17 @@ export const initialNodes = [
     position: { x: 597, y: 764 },
     data: { 
       label: 'Pragma, Expires',
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '2^2.2',
+    type: 'pointNode',
+    position: { x: 503, y: 666 },
+    data: { 
+      label: 'HTTP',
+      year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -256,11 +278,77 @@ export const initialNodes = [
     },
   },
   {
+    id: '2^2.3',
+    type: 'pointNode',
+    position: { x: 501, y: 954 },
+    data: { 
+      label: 'HTTP',
+      year: '1990', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '3',
     type: 'yearNode',
     position: { x: 446, y: 1136 },
     data: { 
       label: '2000',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.1',
+    type: 'http',
+    position: { x: 605, y: 1213 },
+    data: { 
+      label: 'REST',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.1.1',
+    type: 'rest',
+    position: { x: 700, y: 1110 },
+    data: { 
+      label: 'REST Constrains',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.1.2',
+    type: 'rest',
+    position: { x: 800, y: 1200 },
+    data: { 
+      label: 'Resourse Naming',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.1.3',
+    type: 'rest',
+    position: { x: 680, y: 1295 },
+    data: { 
+      label: 'Methods, Status Codes',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.2',
+    type: 'eventNode',
+    position: { x: 310, y: 1330 },
+    data: { 
+      label: 'Secure & Persistent Cookies',
       year: '2000', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
@@ -371,6 +459,114 @@ export const initialEdges = [
     sourceHandle: 'bottom',
     target: '3',
     targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e2.2-2.2.1',
+    source: '2.2',
+    sourceHandle: 'top',
+    target: '2.2.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2.2-2.2.2',
+    source: '2.2',
+    sourceHandle: 'right',
+    target: '2.2.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2.2-2.2.3',
+    source: '2.2',
+    sourceHandle: 'right',
+    target: '2.2.3',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2.2-2.2.3',
+    source: '2.2',
+    sourceHandle: 'right',
+    target: '2.2.3',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2.2-2.2.4',
+    source: '2.2',
+    sourceHandle: 'right',
+    target: '2.2.4',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2.2-2.2.5',
+    source: '2.2',
+    sourceHandle: 'bottom',
+    target: '2.2.5',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: 'e2^2.1-2.1',
+    source: '2^2.1',
+    sourceHandle: 'left',
+    target: '2.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e2^2.2-2.2',
+    source: '2^2.2',
+    sourceHandle: 'right',
+    target: '2.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e2^2.3-2.3',
+    source: '2^2.3',
+    sourceHandle: 'left',
+    target: '2.3',
+    targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
