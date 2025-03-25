@@ -6,7 +6,7 @@ const EventNode = ({ data }) => {
         // <div className='relative  flex items-center justify-center'>
         <div>
             {/* Main node */}
-            <div className="w-24 h-24 shadow-md rounded-full bg-gradient-to-b from-gray-300 to-gray-100 flex flex-col items-center justify-center p-4 cursor-pointer border border-gray-400 relative">
+            <div className="w-24 h-24 shadow-md rounded-full bg-gradient-to-b from-gray-100 to-gray-100 flex flex-col items-center justify-center p-4 cursor-pointer border border-gray-400 relative">
                 <Handle type="target" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
