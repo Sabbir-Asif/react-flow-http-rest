@@ -539,7 +539,7 @@ export const initialNodes = [
   {
     id: '5^5.1',
     type: 'pointNode',
-    position: { x: 501, y: 2130 },
+    position: { x: 501, y: 2126 },
     data: { 
       label: '',
       year: '2000', 
@@ -674,7 +674,7 @@ export const initialNodes = [
   {
     id: '6^6.2',
     type: 'pointNode',
-    position: { x: 501, y: 2605 },
+    position: { x: 501, y: 2598 },
     data: { 
       label: '',
       year: '2000', 
@@ -744,7 +744,7 @@ export const initialNodes = [
   {
     id: '7^7.1',
     type: 'pointNode',
-    position: { x: 501, y: 2900 },
+    position: { x: 501, y: 2895 },
     data: { 
       label: '',
       year: '2000', 
@@ -788,7 +788,7 @@ export const initialNodes = [
   {
     id: '7^7.2',
     type: 'pointNode',
-    position: { x: 502, y: 3020 },
+    position: { x: 502, y: 3018 },
     data: { 
       label: '',
       year: '2000', 
@@ -1329,6 +1329,30 @@ export const initialEdges = [
     animated: true,
   },
   {
+    id: '5.2-5.2.2',
+    source: '5.2',
+    sourceHandle: 'left',
+    target: '5.2.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '5.2-5.2.3',
+    source: '5.2',
+    sourceHandle: 'left',
+    target: '5.2.3',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
     id: '5^5.1-5.1',
     source: '5^5.1',
     sourceHandle: 'right',
@@ -1389,6 +1413,66 @@ export const initialEdges = [
     animated: false,
   },
   {
+    id: '6.1-6.1.1',
+    source: '6.1',
+    sourceHandle: 'left',
+    target: '6.1.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '6.1-6.1.2',
+    source: '6.1',
+    sourceHandle: 'left',
+    target: '6.1.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '6.2-6.2.1',
+    source: '6.2',
+    sourceHandle: 'right',
+    target: '6.2.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '6.2-6.2.2',
+    source: '6.2',
+    sourceHandle: 'right',
+    target: '6.2.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '6.2-6.2.3',
+    source: '6.2',
+    sourceHandle: 'right',
+    target: '6.2.3',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
     id: 'e6-7',
     source: '6',
     sourceHandle: 'bottom',
@@ -1435,5 +1519,65 @@ export const initialEdges = [
       stroke: '#333333' 
     },
     animated: false,
+  },
+  {
+    id: '7.1-7.1.2',
+    source: '7.1',
+    sourceHandle: 'left',
+    target: '7.1.2',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.1-7.1.1',
+    source: '7.1',
+    sourceHandle: 'left',
+    target: '7.1.1',
+    targetHandle: 'right',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.2-7.2.1',
+    source: '7.2',
+    sourceHandle: 'right',
+    target: '7.2.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.2-7.2.2',
+    source: '7.2',
+    sourceHandle: 'right',
+    target: '7.2.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.2-7.2.3',
+    source: '7.2',
+    sourceHandle: 'right',
+    target: '7.2.3',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
   },
 ];
