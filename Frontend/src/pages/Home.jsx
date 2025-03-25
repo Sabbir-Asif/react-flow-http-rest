@@ -7,7 +7,7 @@ import FlowCanvas from "../components/Timeline/FlowCanvas";
 
 const Home = () => {
     return (
-        <div className="">
+        <div className="bg-gray-100">
             <Navbar />
             <div className="max-w-6xl mx-auto relative">
                 <Header />
