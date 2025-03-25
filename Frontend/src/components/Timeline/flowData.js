@@ -129,7 +129,8 @@ export const initialNodes = [
       label: 'Same Origin Policy',
       year: '1995', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      popUp: true,
+      filePath: '/data/markdown.md', 
     },
   },
   {
@@ -265,7 +266,8 @@ export const initialNodes = [
     data: { 
       additional: 'Cache-Control,Directives,ETag,Last-Modified,Vary',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/caching.md', 
     },
   },
   {
