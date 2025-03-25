@@ -40,7 +40,8 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '0.9',
-      year: '1995', 
+      year: '1995',
+      popUp: true,
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },

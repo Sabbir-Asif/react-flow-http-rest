@@ -4,6 +4,7 @@ import '@xyflow/react/dist/style.css';
 import CustomNode from './Nodes/CustomNode';
 import { initialNodes, initialEdges } from './flowData';
 import Drawer from './Drawer';
+import PopUp from './PopUp';
 import YearNode from './Nodes/YearNode';
 import EventNode from './Nodes/EventNode';
 import HTTP from './Nodes/HTTP';
@@ -37,19 +38,32 @@ const FlowCanvas = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [popUpOpen, setPopUpOpen] = useState(false);
   const [selectedFilePath, setSelectedFilePath] = useState(null);
 
   const onNodeClick = (event, node) => {
     if (node.data && node.data.filePath) {
       setSelectedFilePath(node.data.filePath);
-      setDrawerOpen(true);
+      if (node.data.popUp) {
+        setPopUpOpen(true);
+        setDrawerOpen(false);
+      } else if (node.data.drawer) {
+        setDrawerOpen(true);
+        setPopUpOpen(false);
+      } else {
+        alert(`No data available for this node`);
+      }
     } else {
-      alert(`No content for this node`);
+      alert(`No data available for this node`);
     }
   };
 
   const closeDrawer = () => {
     setDrawerOpen(false);
+  };
+
+  const closePopUp = () => {
+    setPopUpOpen(false);
   };
 
   return (
@@ -77,13 +91,14 @@ const FlowCanvas = () => {
           panOnDrag={false}
           dragOnlyNodes={false}
           proOptions={{ hideAttribution: true }}
-          style={{ width: '100%', height: '100%' }} // Ensure ReactFlow gets proper dimensions
+          style={{ width: '100%', height: '100%' }}
         >
           <Background color="#FFFFFF" variant="dots" gap={0} size={0} />
         </ReactFlow>
       </div>
 
       <Drawer isOpen={drawerOpen} onClose={closeDrawer} filePath={selectedFilePath} />
+      <PopUp isOpen={popUpOpen} onClose={closePopUp} filePath={selectedFilePath} />
     </div>
   );
 };
