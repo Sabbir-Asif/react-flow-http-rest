@@ -6,13 +6,12 @@ import FlowCanvas from "../components/Timeline/FlowCanvas";
 
 const Home = () => {
     return (
-        <div className="">
+        <div className="bg-[#FDFAF6]">
             <Navbar />
+            <Header />
             <div className="max-w-6xl mx-auto relative">
-                <Header />
                 <div className="w-full flex justify-center relative">
                     <div className="w-[1152px] relative">
-                        {/* Position ColorMechanism absolutely within the FlowCanvas container */}
                         <div className="absolute top-4 left-4 z-10">
                             <ColorMechanism />
                         </div>
