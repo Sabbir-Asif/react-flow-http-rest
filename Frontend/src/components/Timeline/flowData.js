@@ -206,7 +206,8 @@ export const initialNodes = [
     data: { 
       label: 'Pragma, Expires',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/caching/2.2.1_pragma.md', 
     },
   },
   {
@@ -270,7 +271,7 @@ export const initialNodes = [
       additional: 'Cache-Control,Directives,ETag,Last-Modified,Vary',
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/caching.md', 
+      filePath: '/data/caching/2.2.3_Cache_Control.md', 
     },
   },
   {
@@ -666,7 +667,7 @@ export const initialNodes = [
     type: 'header',
     position: { x: 20, y: 2570 },
     data: { 
-      label: 'Persistent, Multiplexing',
+      label: ':method, :scheme, : authority, :path, accept encoding',
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
@@ -781,7 +782,7 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 30, y: 2920 },
     data: { 
-      label: 'Edge Caching Introduced',
+      label: 'Third Party Cookies Blocked',
       year: '2020', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
