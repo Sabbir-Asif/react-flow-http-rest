@@ -1,0 +1,15 @@
+# Secure-Persistent Cookie
+Over time, concerns about privacy and data misuse led to stricter regulations like GDPR and browser restrictions on third-party cookies. To enhance security, features like `HttpOnly` (preventing JavaScript access), `Secure` flag (ensuring HTTPS transmission), and persistent cookies (allowing long-term storage) were introduced, balancing convenience with privacy protection.
+
+## Key Addition of Cookies in this decade:
+
+1. **Secure Flag** – Ensuring safe cookie transmission over HTTPS.
+2. **Persistent Cookies** – Maintaining sessions beyond browser closure.
+3. **HttpOnly Attribute** – Protecting cookies from JavaScript-based attacks.
+
+## Limitations:
+
+- Cookies were not ideal for client-side data storage due to their small size and network overhead.
+- No standard way to enforce user consent, with many companies ignoring this.
+- Websites were vulnerable to CSRF attacks.
+<img src="./assets/CSRF.png">

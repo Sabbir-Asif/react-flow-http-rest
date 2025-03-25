@@ -86,8 +86,9 @@ export const initialNodes = [
     data: { 
       label: 'Netscape Introduced Cookies',
       year: '1990', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/cookies/1.2_intro.md', 
     },
   },
   {
@@ -444,8 +445,9 @@ export const initialNodes = [
     data: { 
       label: 'JSONP Introduced',
       year: '2005', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/CORS/4.1.IntroduceJSONP.md', 
     },
   },
   {
