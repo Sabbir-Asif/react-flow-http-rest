@@ -1,3 +1,4 @@
+import { version } from "react";
 
 export const initialNodes = [
   {
@@ -52,6 +53,7 @@ export const initialNodes = [
     position: { x: 853, y: 287 },
     data: { 
       label: 'Non Persistent',
+      drawer: true,
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -532,6 +534,260 @@ export const initialNodes = [
       filePath: '/content/HTTP/0.9.md', 
     },
   },
+  {
+    id: '5.1',
+    type: 'eventNode',
+    position: { x: 631, y: 2080 },
+    data: { 
+      label: 'PATCH Method Introduced',
+      year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5.2',
+    type: 'eventNode',
+    position: { x: 300, y: 2200 },
+    data: { 
+      label: 'Modern Data Storage',
+      year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5.2.1',
+    type: 'cookies',
+    position: { x: 70, y: 2110 },
+    data: { 
+      label: 'Session Storage',
+      year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5.2.2',
+    type: 'cookies',
+    position: { x: 5, y: 2200 },
+    data: { 
+      label: 'Local Storage',
+      year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5.2.3',
+    type: 'cookies',
+    position: { x: 60, y: 2295 },
+    data: { 
+      label: 'Local Storage',
+      year: '2010', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6',
+    type: 'yearNode',
+    position: { x: 446, y: 2400 },
+    data: { 
+      label: '2015',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.1',
+    type: 'http',
+    position: { x: 285, y: 2530 },
+    data: { 
+      label: 'HTTP',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.1.1',
+    type: 'connection',
+    position: { x: 15, y: 2450 },
+    data: { 
+      label: 'Persistent, Multiplexing',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.1.2',
+    type: 'header',
+    position: { x: 20, y: 2570 },
+    data: { 
+      label: 'Persistent, Multiplexing',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.2',
+    type: 'eventNode',
+    position: { x: 631, y: 2550 },
+    data: { 
+      label: 'Samesite Cookie Introduced',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.2.1',
+    type: 'cookies',
+    position: { x: 780, y: 2470 },
+    data: { 
+      label: 'Strict',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.2.2',
+    type: 'cookies',
+    position: { x: 850, y: 2550 },
+    data: { 
+      label: 'Lax',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '6.2.3',
+    type: 'cookies',
+    position: { x: 820, y: 2640 },
+    data: { 
+      label: 'None',
+      version: '2.0',
+      year: '2015', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7',
+    type: 'yearNode',
+    position: { x: 446, y: 2750 },
+    data: { 
+      label: '2020',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.1',
+    type: 'eventNode',
+    position: { x: 300, y: 2850 },
+    data: { 
+      label: 'Edge Caching Introduced',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.1.1',
+    type: 'caching',
+    position: { x: 30, y: 2800 },
+    data: { 
+      label: 'Edge Caching Introduced',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.1.2',
+    type: 'cookies',
+    position: { x: 30, y: 2920 },
+    data: { 
+      label: 'Edge Caching Introduced',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.2',
+    type: 'http',
+    position: { x: 631, y: 3000 },
+    data: { 
+      label: 'HTTP',
+      version: '3.0',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.2.1',
+    type: 'connection',
+    position: { x: 800, y: 2900 },
+    data: { 
+      label: 'QUIC, 0-RTT',
+      version: '3.0',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.2.2',
+    type: 'connection',
+    position: { x: 900, y: 3000 },
+    data: { 
+      label: 'Multiplexing',
+      additional: '(Without HOL)',
+      version: '3.0',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '7.2.3',
+    type: 'connection',
+    position: { x: 820, y: 3100 },
+    data: { 
+      label: 'Stream Prioritization',
+      version: '3.0',
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '8',
+    type: 'pointNode',
+    position: { x: 507, y: 3250 },
+    data: { 
+      label: '2025',
+      year: '2025', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
   
 ];
 
@@ -985,6 +1241,42 @@ export const initialEdges = [
     source: '4',
     sourceHandle: 'bottom',
     target: '5',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e5-6',
+    source: '5',
+    sourceHandle: 'bottom',
+    target: '6',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e6-7',
+    source: '6',
+    sourceHandle: 'bottom',
+    target: '7',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e7-8',
+    source: '7',
+    sourceHandle: 'bottom',
+    target: '8',
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 

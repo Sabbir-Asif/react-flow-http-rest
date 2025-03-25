@@ -9,7 +9,7 @@ const Connection = ({ data }) => {
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
-                <div className="font-semibold text-black text-center font-nunito text-wrap">{data.label}</div>
+                <div className="font-semibold text-black text-center font-nunito break-all">{data.label}</div>
                 {
                     data.additional && <div className="text-xs text-black text-center font-nunito text-wrap">{data.additional}</div>
                 }

@@ -67,8 +67,8 @@ const FlowCanvas = () => {
   };
 
   return (
-    <div className="w-full relative" style={{ minHeight: '3000px' }}>
-      <div className="relative w-full h-[3000px]">
+    <div className="w-full relative" style={{ minHeight: '3400px' }}>
+      <div className="relative w-full h-[3400px]">
         <ReactFlow
           nodes={nodes}
           edges={edges}
