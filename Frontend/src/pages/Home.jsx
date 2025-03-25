@@ -12,7 +12,7 @@ const Home = () => {
             <div className="max-w-6xl mx-auto relative">
                 <div className="w-full flex justify-center relative">
                     <div className="w-[1152px] relative">
-                        <div className="absolute top-4 left-4 z-10">
+                        <div className="absolute top-12 left-20 z-10">
                             <ColorMechanism />
                         </div>
                         <FlowCanvas />
