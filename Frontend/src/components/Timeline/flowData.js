@@ -44,7 +44,7 @@ export const initialNodes = [
       year: '1995',
       popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/http/http0.9/http0.9.md', 
     },
   },
   {

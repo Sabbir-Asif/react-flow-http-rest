@@ -35,7 +35,7 @@ Welcome to the example.re homepage!
 </html>
 ```
 
-<img src="asset/0.9.png" height=400 width=500>
+<img src="/data/http/http0.9/asset/0.9.png" height=400 width=500>
 
 ### 4. Error Handling
 - **No Standard Error Codes**: No mechanism to indicate errors like 404 Not Found.
