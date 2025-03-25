@@ -346,7 +346,7 @@ export const initialNodes = [
   {
     id: '3.2',
     type: 'eventNode',
-    position: { x: 310, y: 1330 },
+    position: { x: 310, y: 1345 },
     data: { 
       label: 'Secure & Persistent Cookies',
       year: '2000', 
@@ -355,12 +355,122 @@ export const initialNodes = [
     },
   },
   {
+    id: '3.2.1',
+    type: 'cookies',
+    position: { x: 100, y: 1249 },
+    data: { 
+      label: 'Persistent Cookies',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.2.2',
+    type: 'cookies',
+    position: { x: 5, y: 1343 },
+    data: { 
+      label: 'User Preferences',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.2.3',
+    type: 'cookies',
+    position: { x: 20, y: 1445 },
+    data: { 
+      label: 'User Preferences',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.2.4',
+    type: 'cookies',
+    position: { x: 120, y: 1525 },
+    data: { 
+      label: 'User Preferences',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
     id: '4',
     type: 'yearNode',
-    position: { x: 446, y: 1660 },
+    position: { x: 446, y: 1600 },
     data: { 
       label: '2005',
       year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4.1',
+    type: 'eventNode',
+    position: { x: 631, y: 1630 },
+    data: { 
+      label: 'JSONP Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4.2',
+    type: 'eventNode',
+    position: { x: 640, y: 1765 },
+    data: { 
+      label: 'RMM Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4.3',
+    type: 'eventNode',
+    position: { x: 290, y: 1765 },
+    data: { 
+      label: 'CORS Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4.3.1',
+    type: 'header',
+    position: { x: 50, y: 1700 },
+    data: { 
+      label: 'Access-Control-Allow-Origin',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '4.3.2',
+    type: 'cors',
+    position: { x: 50, y: 1850 },
+    data: { 
+      label: 'CORS Introduced',
+      year: '2005', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '5',
+    type: 'yearNode',
+    position: { x: 446, y: 2000 },
+    data: { 
+      label: '2010',
+      year: '2010', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -578,6 +688,18 @@ export const initialEdges = [
     source: '3',
     sourceHandle: 'bottom',
     target: '4',
+    targetHandle: 'top',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: false,
+  },
+  {
+    id: 'e4-5',
+    source: '4',
+    sourceHandle: 'bottom',
+    target: '5',
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
