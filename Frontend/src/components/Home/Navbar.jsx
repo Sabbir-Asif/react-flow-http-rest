@@ -1,9 +1,9 @@
 const Navbar = () => {
   return (
-    <nav className="bg-blue-primary shadow-md p-3 flex items-center justify-between mb-2">
-      <div className="flex items-center bg-gray-100 p-2 rounded-md">
+    <nav className="bg-blue-primary shadow-md p-3 flex items-center justify-between">
+      <div className="flex items-cente rounded-md">
         <img 
-          src="/logo/Cefalo logo.png" 
+          src="/logo/white-logo 1.png" 
           alt="Cefalo logo" 
           className="w-36 mr-6"
         />
