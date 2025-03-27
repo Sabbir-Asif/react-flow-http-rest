@@ -54,7 +54,7 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
 
   return (
     <dialog className={`modal ${isOpen ? 'modal-open' : ''}`}>
-      <div className="modal-box w-11/12 max-w-5xl max-h-[90vh] bg-gray-50">
+      <div className="modal-box w-11/12 max-w-5xl max-h-[90vh] bg-[#FDFAF6]">
         <button 
           className="btn btn-sm btn-circle absolute right-2 top-2" 
           onClick={onClose}
@@ -77,7 +77,7 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
             )}
             
             {/* Render the markdown with all our plugins */}
-            <div className="markdown-body">
+            <div className="markdown-body" style={{ backgroundColor: '#FDFAF6' }}>
               <ReactMarkdown
                 children={markdownContent}
                 remarkPlugins={[
