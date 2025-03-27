@@ -207,7 +207,7 @@ export const initialNodes = [
       label: 'Pragma, Expires',
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/caching/2.2.1_pragma.md', 
+      filePath: '/data/caching/2.2.5_pragma.md', 
     },
   },
   {
