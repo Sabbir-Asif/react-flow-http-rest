@@ -133,7 +133,7 @@ export const initialNodes = [
       year: '1995', 
       description: 'This is the first node',
       popUp: true,
-      filePath: '/data/markdown.md', 
+      filePath: '/data/CORS/2.1_SameOriginPolicy.md', 
     },
   },
   {
@@ -444,11 +444,11 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 631, y: 1630 },
     data: { 
-      label: 'JSONP Introduced',
+      label: 'Introduce JSONP',
       year: '2005', 
       popUp: true,
       description: 'This is the first node',
-      filePath: '/data/CORS/4.1.IntroduceJSONP.md', 
+      filePath: '/data/CORS/4.1_IntroduceJSONP.md', 
     },
   },
   {
@@ -489,10 +489,11 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 290, y: 1805 },
     data: { 
-      label: 'CORS Introduced',
+      label: 'Introduce CORS',
       year: '2005', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/CORS/4.3_IntroduceCORS.md', 
     },
   },
   {
@@ -514,7 +515,8 @@ export const initialNodes = [
       label: 'Access-Control-Allow-Origin',
       year: '2005', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/CORS/4.3.2_Access_Control_Allow_Origin.md', 
     },
   },
   {
@@ -522,10 +524,11 @@ export const initialNodes = [
     type: 'cors',
     position: { x: 50, y: 1890 },
     data: { 
-      label: 'CORS Introduced',
+      label: 'Preflight Request',
       year: '2005', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/CORS/4.3.1_Preflight_Request.md', 
     },
   },
   {
