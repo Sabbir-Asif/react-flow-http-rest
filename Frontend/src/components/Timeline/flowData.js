@@ -71,7 +71,7 @@ export const initialNodes = [
   {
     id: '1^1.1',
     type: 'pointNode',
-    position: { x: 503, y: 399 },
+    position: { x: 503, y: 398 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -139,7 +139,7 @@ export const initialNodes = [
   {
     id: '2^2.1',
     type: 'pointNode',
-    position: { x: 501, y: 645 },
+    position: { x: 501, y: 646 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -213,7 +213,7 @@ export const initialNodes = [
   {
     id: '2^2.2',
     type: 'pointNode',
-    position: { x: 503, y: 666 },
+    position: { x: 503, y: 663 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -287,7 +287,7 @@ export const initialNodes = [
   {
     id: '2^2.3',
     type: 'pointNode',
-    position: { x: 501, y: 954 },
+    position: { x: 501, y: 952 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -320,7 +320,7 @@ export const initialNodes = [
   {
     id: '3^3.1',
     type: 'pointNode',
-    position: { x: 501, y: 1230 },
+    position: { x: 501, y: 1227 },
     data: { 
       label: '',
       year: '2000', 
@@ -499,7 +499,7 @@ export const initialNodes = [
   {
     id: '4^4.3',
     type: 'pointNode',
-    position: { x: 501, y: 1850 },
+    position: { x: 501, y: 1851 },
     data: { 
       label: 'JSONP Introduced',
       year: '2005', 
@@ -680,7 +680,7 @@ export const initialNodes = [
   {
     id: '6^6.2',
     type: 'pointNode',
-    position: { x: 501, y: 2598 },
+    position: { x: 501, y: 2596 },
     data: { 
       label: '',
       year: '2000', 
@@ -794,7 +794,7 @@ export const initialNodes = [
   {
     id: '7^7.2',
     type: 'pointNode',
-    position: { x: 502, y: 3018 },
+    position: { x: 502, y: 3015 },
     data: { 
       label: '',
       year: '2000', 

@@ -4,7 +4,7 @@ import { Handle, Position } from '@xyflow/react';
 const Connection = ({ data }) => {
     return (
         <div className='w-44'>
-            <div className="p-4 border-black border-2 bg-[#DECFB9] rounded-lg shadow-md cursor-pointer">
+            <div className="p-4 border-black border-2 bg-[#dfa770] rounded-lg shadow-md cursor-pointer">
                 <Handle type="target" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="left" position={Position.Left} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />

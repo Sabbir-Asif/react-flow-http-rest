@@ -4,7 +4,7 @@ const ColorMechanism = () => {
   const colorMechanisms = [
     { color: 'bg-[#DECFB9]', mechanism: 'CORS' },
     { color: 'bg-[#EAE79B]', mechanism: 'Cookies' },
-    { color: 'bg-[#F8AA38]', mechanism: 'Connection' },
+    { color: 'bg-[#dfa770]', mechanism: 'Connection' },
     { color: 'bg-[#C2EAAE]', mechanism: 'Method' },
     { color: 'bg-[#B7E7E5]', mechanism: 'Header' },
     { color: 'bg-[#98C9FE]', mechanism: 'Status Code' },
