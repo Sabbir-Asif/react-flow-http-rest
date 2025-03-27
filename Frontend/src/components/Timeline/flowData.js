@@ -86,7 +86,7 @@ export const initialNodes = [
     data: { 
       label: 'Netscape Introduced Cookies',
       year: '1990', 
-      drawer: true,
+      popUp: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2_intro.md', 
     },
@@ -96,10 +96,11 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 77, y: 404 },
     data: { 
-      label: 'Netscape Introduced Cookies',
+      label: 'Session Cookies',
       year: '1990', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/cookies/1.2.1_session_cookie.md',
     },
   },
   {
@@ -281,7 +282,8 @@ export const initialNodes = [
     data: { 
       additional: 'Cookie, Set-Cookie',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/2.3.5_set_cookie.md',
     },
   },
   {
@@ -371,7 +373,8 @@ export const initialNodes = [
       label: 'Secure & Persistent Cookies',
       year: '2000', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      popUp: true,
+      filePath: '/data/cookies/3.2_secure_persistent.md', 
     },
   },
   {
@@ -393,40 +396,32 @@ export const initialNodes = [
       label: 'Persistent Cookies',
       year: '2000', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/3.2.1_persistent_cookies.md', 
     },
   },
   {
     id: '3.2.2',
     type: 'cookies',
-    position: { x: 5, y: 1343 },
+    position: { x: 20, y: 1380 },
     data: { 
-      label: 'User Preferences',
+      label: 'httpOnly',
       year: '2000', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/3.2.2_httpOnly.md',
     },
   },
   {
     id: '3.2.3',
     type: 'cookies',
-    position: { x: 20, y: 1445 },
-    data: { 
-      label: 'httpOnly',
-      year: '2000', 
-      description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
-    },
-  },
-  {
-    id: '3.2.4',
-    type: 'cookies',
-    position: { x: 160, y: 1525 },
+    position: { x: 100, y: 1525 },
     data: { 
       label: 'Secure Flag',
       year: '2000', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/3.2.3_secure_flag.md', 
     },
   },
   {
@@ -584,7 +579,8 @@ export const initialNodes = [
       label: 'Modern Data Storage',
       year: '2010', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      popUp: true,
+      filePath: '/data/cookies/5.2_modern_storage.md',
     },
   },
   {
@@ -595,7 +591,8 @@ export const initialNodes = [
       label: 'Session Storage',
       year: '2010', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/5.2.1_session.md',
     },
   },
   {
@@ -606,7 +603,8 @@ export const initialNodes = [
       label: 'Local Storage',
       year: '2010', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/5.2.2_local.md',
     },
   },
   {
@@ -614,10 +612,11 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 60, y: 2295 },
     data: { 
-      label: 'Local Storage',
+      label: 'IndexedDB',
       year: '2010', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/5.2.3_indexedDB.md',
     },
   },
   {
@@ -698,7 +697,8 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      popUp: true,
+      filePath: '/data/cookies/6.2_samesite.md',
     },
   },
   {
@@ -710,7 +710,8 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/6.2.1_strict.md',
     },
   },
   {
@@ -722,7 +723,8 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/6.2.2_lax.md',
     },
   },
   {
@@ -734,7 +736,8 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/6.2.3_none.md',
     },
   },
   {
@@ -789,7 +792,8 @@ export const initialNodes = [
       label: 'Third Party Cookies Blocked',
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/7.1.2_third_party.md',
     },
   },
   {
