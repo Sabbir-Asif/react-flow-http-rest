@@ -313,8 +313,9 @@ export const initialNodes = [
     data: { 
       label: 'REST',
       year: '2000', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/rest/3.1_Introduction_To_Rest.md', 
     },
   },
   {
@@ -325,7 +326,6 @@ export const initialNodes = [
       label: '',
       year: '2000', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
     },
   },
 
@@ -336,8 +336,9 @@ export const initialNodes = [
     data: { 
       label: 'REST Constrains',
       year: '2000', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/rest/3.1.1_REST_Constraints.md',  
     },
   },
   {
