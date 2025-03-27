@@ -352,8 +352,9 @@ export const initialNodes = [
     data: { 
       label: 'Resourse Naming',
       year: '2000', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/rest/3.1.2_Resource_Naming.md', 
     },
   },
   {
