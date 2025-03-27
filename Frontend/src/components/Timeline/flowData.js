@@ -63,7 +63,7 @@ export const initialNodes = [
     type: 'method',
     position: { x: 931, y: 394 },
     data: { 
-      label: 'GET Method Introduced',
+      label: 'Introduce GET Method',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -155,8 +155,9 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '1.0',
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/http/http1.0/http1.0.md', 
     },
   },
   {
@@ -229,8 +230,9 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '1.1',
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/http/http1.1/http1.1.md', 
     },
   },
   {
