@@ -174,7 +174,7 @@ export const initialNodes = [
     type: 'method',
     position: { x: 923, y: 614 },
     data: { 
-      additional: 'GET,POST,PUT,DELETE,HEAD,OPTIONS,TRACE',
+      additional: 'POST, PUT, DELETE, HEAD, OPTIONS, TRACE',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -248,7 +248,7 @@ export const initialNodes = [
     type: 'header',
     position: { x: 2, y: 857 },
     data: { 
-      additional: 'Connection,Cache-Control,Expires,Host,Encodings',
+      additional: 'Connection, Cache-Control, Expires, Host, Encodings',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -258,7 +258,7 @@ export const initialNodes = [
     type: 'statusCode',
     position: { x: 14, y: 954 },
     data: { 
-      additional: 'Connection,Cache-Control,Expires,Host,Encodings',
+      additional: '202, 206, 301, 304, 403, 410',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -268,7 +268,7 @@ export const initialNodes = [
     type: 'caching',
     position: { x: 45, y: 1055 },
     data: { 
-      additional: 'Cache-Control,Directives,ETag,Last-Modified,Vary',
+      additional: 'Cache-Control, Directives, ETag, Last-Modified, Vary',
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/caching/2.2.3_Cache_Control.md', 
@@ -467,7 +467,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 640, y: 1765 },
     data: { 
-      label: 'RMM Introduced',
+      label: 'Introduce RMM',
       year: '2005', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
@@ -670,7 +670,7 @@ export const initialNodes = [
     type: 'header',
     position: { x: 20, y: 2570 },
     data: { 
-      label: ':method, :scheme, : authority, :path, accept encoding',
+      label: ':method, :scheme, : authority, :path, accept-encoding',
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
@@ -693,7 +693,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 631, y: 2550 },
     data: { 
-      label: 'Samesite Cookie Introduced',
+      label: 'Introduce Samesite Cookie',
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
@@ -763,7 +763,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 300, y: 2850 },
     data: { 
-      label: 'Edge Caching Introduced',
+      label: 'Introduce Edge Caching',
       year: '2020', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
@@ -774,7 +774,7 @@ export const initialNodes = [
     type: 'caching',
     position: { x: 30, y: 2800 },
     data: { 
-      label: 'Edge Caching Introduced',
+      label: 'Introduce Edge Caching',
       year: '2020', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
