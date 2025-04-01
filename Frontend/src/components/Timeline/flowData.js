@@ -364,8 +364,9 @@ export const initialNodes = [
     data: { 
       label: 'Methods, Status Codes',
       year: '2000', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/rest/3.1.3_Methods_And_Status_Codes.md', 
     },
   },
   {
