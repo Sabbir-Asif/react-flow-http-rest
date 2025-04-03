@@ -55,7 +55,7 @@ export const initialNodes = [
       label: 'Non Persistent',
       drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/http/http0.9/1.1.1_NonPersistent.md', 
     },
   },
   {
@@ -63,9 +63,10 @@ export const initialNodes = [
     type: 'method',
     position: { x: 931, y: 394 },
     data: { 
+      drawer: true,
       label: 'Introduce GET Method',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/http/http0.9/1.1.2_GET.md', 
     },
   },
   {
@@ -165,10 +166,11 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 794, y: 526 },
     data: { 
+      drawer: true,
       label: 'Non Persistent',
       additional: '(keep-alive optional)',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.0/2.2.1_KeepAlive.md', 
     },
   },
   {
@@ -176,9 +178,10 @@ export const initialNodes = [
     type: 'method',
     position: { x: 923, y: 614 },
     data: { 
+      drawer: true,
       additional: 'POST, PUT, DELETE, HEAD, OPTIONS, TRACE',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.0/2.2.2_Methods.md', 
     },
   },
   {
@@ -186,9 +189,10 @@ export const initialNodes = [
     type: 'header',
     position: { x: 892, y: 715 },
     data: { 
+      drawer: true,
       additional: 'Content-Type, Content-Length, Date',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.0/2.2.3_Content-Type.md', 
     },
   },
   {
@@ -196,9 +200,10 @@ export const initialNodes = [
     type: 'statusCode',
     position: { x: 824, y: 814 },
     data: { 
+      drawer: true,
       label: '1xx-5xx introduced',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.0/2.2.4_Status.md', 
     },
   },
   {
@@ -240,10 +245,11 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 134, y: 753 },
     data: { 
+      drawer: true,
       label: 'Persistent',
       additional: '(by default)',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.1/2.3.1_Persistent.md', 
     },
   },
   {
@@ -251,9 +257,10 @@ export const initialNodes = [
     type: 'header',
     position: { x: 2, y: 857 },
     data: { 
+      drawer: true,
       additional: 'Connection, Cache-Control, Expires, Host, Encodings',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.1/2.3.2_Header.md', 
     },
   },
   {
@@ -261,9 +268,10 @@ export const initialNodes = [
     type: 'statusCode',
     position: { x: 14, y: 954 },
     data: { 
+      drawer: true,
       additional: '202, 206, 301, 304, 403, 410',
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: 'data/http/http1.1/2.3.3_StatusCode.md', 
     },
   },
   {

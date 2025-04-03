@@ -81,7 +81,8 @@ Content-Type: image/gif
 
 ### 7. Connection Management: Short-lived Connections
 
-<img src="asset/1.0_shortlived.png" height=400 width=500>
+<img src="data/http/http1.0/asset/1.0_shortlived.png" height=400 width=500>
+
 
 - HTTP/1.0 used a **short-lived connection** model:
   - Each request/response pair required a new TCP connection.
