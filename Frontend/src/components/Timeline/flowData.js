@@ -63,7 +63,7 @@ export const initialNodes = [
     type: 'method',
     position: { x: 931, y: 394 },
     data: { 
-      label: 'Introduce GET Method',
+      label: 'GET Method Introduced',
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
     },
@@ -86,7 +86,7 @@ export const initialNodes = [
     data: { 
       label: 'Netscape Introduced Cookies',
       year: '1990', 
-      popUp: true,
+      drawer: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2_intro.md', 
     },
@@ -96,11 +96,10 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 77, y: 404 },
     data: { 
-      label: 'Session Cookies',
+      label: 'Netscape Introduced Cookies',
       year: '1990', 
-      drawer: true,
       description: 'This is the first node',
-      filePath: '/data/cookies/1.2.1_session_cookie.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -155,9 +154,8 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '1.0',
-      popUp: true,
       description: 'This is the first node',
-      filePath: '/data/http/http1.0/http1.0.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -209,7 +207,7 @@ export const initialNodes = [
       label: 'Pragma, Expires',
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/caching/2.2.5_pragma.md', 
+      filePath: '/data/caching/2.2.1_pragma.md', 
     },
   },
   {
@@ -230,9 +228,8 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '1.1',
-      popUp: true,
       description: 'This is the first node',
-      filePath: '/data/http/http1.1/http1.1.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -284,8 +281,7 @@ export const initialNodes = [
     data: { 
       additional: 'Cookie, Set-Cookie',
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/2.3.5_set_cookie.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -317,9 +313,8 @@ export const initialNodes = [
     data: { 
       label: 'REST',
       year: '2000', 
-      popUp: true,
       description: 'This is the first node',
-      filePath: '/data/rest/3.1_Introduction_To_Rest.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -330,6 +325,7 @@ export const initialNodes = [
       label: '',
       year: '2000', 
       description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
 
@@ -340,9 +336,8 @@ export const initialNodes = [
     data: { 
       label: 'REST Constrains',
       year: '2000', 
-      drawer: true,
       description: 'This is the first node',
-      filePath: '/data/rest/3.1.1_REST_Constraints.md',  
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -352,9 +347,8 @@ export const initialNodes = [
     data: { 
       label: 'Resourse Naming',
       year: '2000', 
-      drawer: true,
       description: 'This is the first node',
-      filePath: '/data/rest/3.1.2_Resource_Naming.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -364,9 +358,8 @@ export const initialNodes = [
     data: { 
       label: 'Methods, Status Codes',
       year: '2000', 
-      drawer: true,
       description: 'This is the first node',
-      filePath: '/data/rest/3.1.3_Methods_And_Status_Codes.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -377,8 +370,7 @@ export const initialNodes = [
       label: 'Secure & Persistent Cookies',
       year: '2000', 
       description: 'This is the first node',
-      popUp: true,
-      filePath: '/data/cookies/3.2_secure_persistent.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -400,32 +392,40 @@ export const initialNodes = [
       label: 'Persistent Cookies',
       year: '2000', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/3.2.1_persistent_cookies.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
     id: '3.2.2',
     type: 'cookies',
-    position: { x: 20, y: 1380 },
+    position: { x: 5, y: 1343 },
     data: { 
-      label: 'httpOnly',
+      label: 'User Preferences',
       year: '2000', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/3.2.2_httpOnly.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
     id: '3.2.3',
     type: 'cookies',
-    position: { x: 100, y: 1525 },
+    position: { x: 20, y: 1445 },
+    data: { 
+      label: 'httpOnly',
+      year: '2000', 
+      description: 'This is the first node',
+      filePath: '/content/HTTP/0.9.md', 
+    },
+  },
+  {
+    id: '3.2.4',
+    type: 'cookies',
+    position: { x: 160, y: 1525 },
     data: { 
       label: 'Secure Flag',
       year: '2000', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/3.2.3_secure_flag.md', 
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -583,8 +583,7 @@ export const initialNodes = [
       label: 'Modern Data Storage',
       year: '2010', 
       description: 'This is the first node',
-      popUp: true,
-      filePath: '/data/cookies/5.2_modern_storage.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -595,8 +594,7 @@ export const initialNodes = [
       label: 'Session Storage',
       year: '2010', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/5.2.1_session.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -607,8 +605,7 @@ export const initialNodes = [
       label: 'Local Storage',
       year: '2010', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/5.2.2_local.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -616,11 +613,10 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 60, y: 2295 },
     data: { 
-      label: 'IndexedDB',
+      label: 'Local Storage',
       year: '2010', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/5.2.3_indexedDB.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -652,9 +648,10 @@ export const initialNodes = [
     data: { 
       label: 'HTTP',
       version: '2.0',
+      popUp: true,
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_2/6.1.md', 
     },
   },
   {
@@ -664,9 +661,10 @@ export const initialNodes = [
     data: { 
       label: 'Persistent, Multiplexing',
       version: '2.0',
+      drawer: true,
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_2/6.1.1.md', 
     },
   },
   {
@@ -676,9 +674,10 @@ export const initialNodes = [
     data: { 
       label: ':method, :scheme, : authority, :path, accept-encoding',
       version: '2.0',
+      drawer: true,
       year: '2015', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_2/6.1.2.md', 
     },
   },
   {
@@ -701,8 +700,7 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      popUp: true,
-      filePath: '/data/cookies/6.2_samesite.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -714,8 +712,7 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/6.2.1_strict.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -727,8 +724,7 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/6.2.2_lax.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -740,8 +736,7 @@ export const initialNodes = [
       version: '2.0',
       year: '2015', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/6.2.3_none.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
@@ -796,8 +791,7 @@ export const initialNodes = [
       label: 'Third Party Cookies Blocked',
       year: '2020', 
       description: 'This is the first node',
-      drawer: true,
-      filePath: '/data/cookies/7.1.2_third_party.md',
+      filePath: '/content/HTTP/0.9.md', 
     },
   },
   {
