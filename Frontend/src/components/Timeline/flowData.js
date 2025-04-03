@@ -478,8 +478,9 @@ export const initialNodes = [
     data: { 
       label: 'Introduce RMM',
       year: '2005', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/rest/4.2_RMM.md', 
     },
   },
   {
