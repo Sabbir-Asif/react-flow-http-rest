@@ -9,7 +9,7 @@ The **HyperText Transfer Protocol (HTTP)** is the foundation of the World Wide W
 
 ### 1. Persistent Connections
 
-<img src="asset/1.1_persistent.png" height=400 width=500>
+<img src="data/http/http1.1/asset/1.1_persistent.png" height=400 width=500>
 
 - Also known as **Keep-Alive** connections.
 - A single **TCP connection** can be reused for multiple HTTP requests, eliminating the need for multiple handshakes.
@@ -64,7 +64,8 @@ HTTP/1.1 introduced six new methods:
 
 ### 9. Improvements in Connection Handling
 
-<img src="asset/persistent_http.png" height=400 width=500>
+<img src="data/http/http1.1/asset/persistent_http.png" height=400 width=500>
+
 
 #### **Non-Pipelined Persistent Connection**
 - Connection setup: **2 RTTs**

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="320" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="300" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333333">HTTP 0.9 Non-Persistent Connection</text>
+  
+  <!-- Client -->
+  <rect x="60" y="100" width="120" height="70" rx="8" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+  <text x="120" y="140" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">Client</text>
+  
+  <!-- Server -->
+  <rect x="420" y="100" width="120" height="70" rx="8" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+  <text x="480" y="140" text-anchor="middle" font-family="Arial" font-size="16" fill="white" font-weight="bold">Server</text>
+  
+  <!-- Connection Flow -->
+  <path d="M180 125 L420 125" stroke="#FF5722" stroke-width="3" stroke-dasharray="5,3"/>
+  <polygon points="415,120 430,125 415,130" fill="#FF5722"/>
+  <text x="300" y="115" text-anchor="middle" font-family="Arial" font-size="14" fill="#FF5722" font-weight="bold">1. TCP Connection</text>
+  
+  <!-- Request -->
+  <path d="M180 160 L420 160" stroke="#9C27B0" stroke-width="3"/>
+  <polygon points="415,155 430,160 415,165" fill="#9C27B0"/>
+  <text x="300" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#9C27B0" font-weight="bold">2. GET Request</text>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="12" fill="#9C27B0">GET /index.html</text>
+  
+  <!-- Response -->
+  <path d="M420 225 L180 225" stroke="#009688" stroke-width="3"/>
+  <polygon points="185,220 170,225 185,230" fill="#009688"/>
+  <text x="300" y="245" text-anchor="middle" font-family="Arial" font-size="14" fill="#009688" font-weight="bold">3. HTML Response</text>
+  <text x="300" y="265" text-anchor="middle" font-family="Arial" font-size="12" fill="#009688">&lt;HTML&gt;Hello World!&lt;/HTML&gt;</text>
+  
+  <!-- Disconnect -->
+  <path d="M180 290 L420 290" stroke="#F44336" stroke-width="3" stroke-dasharray="5,3"/>
+  <line x1="295" y1="285" x2="305" y2="295" stroke="#F44336" stroke-width="3"/>
+  <line x1="295" y1="295" x2="305" y2="285" stroke="#F44336" stroke-width="3"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#F44336" font-weight="bold">4. Connection Closed</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="680" height="500" viewBox="0 0 680 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa" rx="8"/>
+  
+  <!-- Title -->
+  <text x="340" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#2c3e50">
+    HTTP/1.0 Headers Evolution
+  </text>
+  
+  <!-- Table Header -->
+  <rect x="40" y="60" width="600" height="40" fill="#3498db" rx="4"/>
+  <text x="130" y="85" text-anchor="middle" fill="white" font-weight="bold">Header</text>
+  <text x="330" y="85" text-anchor="middle" fill="white" font-weight="bold">Pre-HTTP/1.0 Issue</text>
+  <text x="530" y="85" text-anchor="middle" fill="white" font-weight="bold">HTTP/1.0 Solution</text>
+  
+  <!-- Content-Type Row -->
+  <g transform="translate(0, 0)">
+    <rect x="40" y="110" width="600" height="50" fill="#ecf0f1" rx="4"/>
+    <rect x="40" y="110" width="180" height="50" fill="#e74c3c" fill-opacity="0.7" rx="4"/>
+    <text x="130" y="140" text-anchor="middle" fill="white" font-weight="bold">Content-Type</text>
+    <text x="330" y="140" text-anchor="middle">Only HTML supported</text>
+    <text x="530" y="140" text-anchor="middle">Multi-format web</text>
+  </g>
+  
+  <!-- Accept Row -->
+  <g transform="translate(0, 60)">
+    <rect x="40" y="110" width="600" height="50" fill="#ecf0f1" rx="4"/>
+    <rect x="40" y="110" width="180" height="50" fill="#2ecc71" fill-opacity="0.7" rx="4"/>
+    <text x="130" y="140" text-anchor="middle" fill="white" font-weight="bold">Accept</text>
+    <text x="330" y="140" text-anchor="middle">Wasted bandwidth</text>
+    <text x="530" y="140" text-anchor="middle">Content negotiation</text>
+  </g>
+  
+  <!-- Content-Length Row -->
+  <g transform="translate(0, 120)">
+    <rect x="40" y="110" width="600" height="50" fill="#ecf0f1" rx="4"/>
+    <rect x="40" y="110" width="180" height="50" fill="#e67e22" fill-opacity="0.7" rx="4"/>
+    <text x="130" y="140" text-anchor="middle" fill="white" font-weight="bold">Content-Length</text>
+    <text x="330" y="140" text-anchor="middle">Indeterminate transfers</text>
+    <text x="530" y="140" text-anchor="middle">Reliable downloads</text>
+  </g>
+  
+  <!-- User-Agent Row -->
+  <g transform="translate(0, 180)">
+    <rect x="40" y="110" width="600" height="50" fill="#ecf0f1" rx="4"/>
+    <rect x="40" y="110" width="180" height="50" fill="#9b59b6" fill-opacity="0.7" rx="4"/>
+    <text x="130" y="140" text-anchor="middle" fill="white" font-weight="bold">User-Agent</text>
+    <text x="330" y="140" text-anchor="middle">Blind interaction</text>
+    <text x="530" y="140" text-anchor="middle">Compatibility management</text>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="40" y="370" width="600" height="40" fill="#2c3e50" rx="4"/>
+  <text x="340" y="395" text-anchor="middle" fill="white" font-size="14">
+    HTTP/1.0 (1996) solved critical limitations of HTTP/0.9
+  </text> 
+</svg>
