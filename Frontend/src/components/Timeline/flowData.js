@@ -810,8 +810,9 @@ export const initialNodes = [
       label: 'HTTP',
       version: '3.0',
       year: '2020', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_3/7.2_markdown.md', 
     },
   },
   {
@@ -821,9 +822,10 @@ export const initialNodes = [
     data: { 
       label: 'QUIC, 0-RTT',
       version: '3.0',
+      drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_3/7.2.1_QUIC.md', 
     },
   },
   {
@@ -834,9 +836,10 @@ export const initialNodes = [
       label: 'Multiplexing',
       additional: '(Without HOL)',
       version: '3.0',
+      drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_3/7.2.2_Multiplexing.md', 
     },
   },
   {
@@ -846,9 +849,10 @@ export const initialNodes = [
     data: { 
       label: 'Stream Prioritization',
       version: '3.0',
+      drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/HTTP_3/7.2.3_Stream_Prioritization.md', 
     },
   },
   {
