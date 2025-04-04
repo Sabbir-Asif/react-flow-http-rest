@@ -785,8 +785,9 @@ export const initialNodes = [
     data: { 
       label: 'Introduce Edge Caching',
       year: '2020', 
+      popUp: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/EdgeCaching/7.1.md', 
     },
   },
   {
@@ -796,8 +797,9 @@ export const initialNodes = [
     data: { 
       label: 'Introduce Edge Caching',
       year: '2020', 
+      drawer: true,
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      filePath: '/data/EdgeCaching/7.1.1.md', 
     },
   },
   {
@@ -807,9 +809,10 @@ export const initialNodes = [
     data: { 
       label: 'Third Party Cookies Blocked',
       year: '2020', 
+      drawer: true,
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/cookies/7.1.2_third_party.md',
+      filePath: '/data/EdgeCaching/7.1.2.md',
     },
   },
   {
