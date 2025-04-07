@@ -571,7 +571,8 @@ export const initialNodes = [
       label: 'PATCH Method Introduced',
       year: '2010', 
       description: 'This is the first node',
-      filePath: '/content/HTTP/0.9.md', 
+      drawer: true,
+      filePath: '/data/cookies/5.1_patch_introduced.md', 
     },
   },
   {
