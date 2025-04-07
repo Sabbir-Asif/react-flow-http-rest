@@ -568,7 +568,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 631, y: 2080 },
     data: { 
-      label: 'PATCH Method Introduced',
+      label: 'Introduce PATCH Method ',
       year: '2010', 
       description: 'This is the first node',
       drawer: true,
@@ -591,7 +591,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 300, y: 2200 },
     data: { 
-      label: 'Modern Data Storage',
+      label: 'Client Side Storage',
       year: '2010', 
       description: 'This is the first node',
       popUp: true,
@@ -603,11 +603,11 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 70, y: 2110 },
     data: { 
-      label: 'Session Storage',
+      label: 'Local Storage',
       year: '2010', 
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/cookies/5.2.1_session.md',
+      filePath: '/data/cookies/5.2.1_local.md',
     },
   },
   {
@@ -615,11 +615,11 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 5, y: 2200 },
     data: { 
-      label: 'Local Storage',
+      label: 'Session Storage',
       year: '2010', 
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/cookies/5.2.2_local.md',
+      filePath: '/data/cookies/5.2.2_session.md',
     },
   },
   {
