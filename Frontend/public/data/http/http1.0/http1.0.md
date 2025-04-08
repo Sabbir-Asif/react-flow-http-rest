@@ -16,7 +16,6 @@ HTTP/1.0, introduced in 1996, was the first standardized version of the HyperTex
 
 ### 2. HTTP Request Methods
 HTTP/1.0 introduced new request methods beyond `GET`, making web interactions more versatile:
-- **GET**: Retrieve resources
 - **POST**: Send data to the server for processing
 - **HEAD**: Retrieve headers without the response body (useful for checking metadata without downloading content)
 
@@ -37,7 +36,6 @@ Headers allowed additional information to be sent along with requests and respon
 - **Client Headers**:
   - `User-Agent`: Identifies the client software making the request.
   - `Accept`: Specifies acceptable content types for the response.
-  - `Host`: Identifies the target host, enabling virtual hosting on the same server.
 - **Server Headers**:
   - `Content-Type`: Specifies the file format of the response (`text/html`, `image/png`, etc.).
   - `Content-Length`: Defines the size of the response body.
@@ -56,8 +54,7 @@ User-Agent: NCSA_Mosaic/2.0 (Windows 3.1)
 #### Server Response
 ```plaintext
 HTTP/1.0 200 OK
-Date: Sun, 01 Jan 1995 12:01:00 GMT
-Server: CERN/3.0 libwww/2.17
+...
 Content-Type: text/html
 
 <html>
@@ -72,8 +69,7 @@ User-Agent: NCSA_Mosaic/2.0 (Windows 3.1)
 #### Server Response (Sending Image Data)
 ```plaintext
 HTTP/1.0 200 OK
-Date: Sun, 01 Jan 1995 12:01:01 GMT
-Server: CERN/3.0 libwww/2.17
+...
 Content-Type: image/gif
 
 <Encoded data of logo.gif>
@@ -81,7 +77,14 @@ Content-Type: image/gif
 
 ### 7. Connection Management: Short-lived Connections
 
-<img src="data/http/http1.0/asset/1.0_shortlived.png" height=400 width=500>
+<figure>
+  <div align="center">
+    <img src="data/http/http1.0/asset/http1.0.png" height="300" width="500" style="border: 2px solid black;">
+  </div>
+  <figcaption style="text-align: center"></figcaption>  
+</figure>
+
+<!-- <img src="data/http/http1.0/asset/http1.0.png" height=400 width=500> -->
 
 
 - HTTP/1.0 used a **short-lived connection** model:
@@ -93,10 +96,6 @@ Content-Type: image/gif
 - HTTP/1.0 allowed caching of responses to improve performance.
 - `Expires` and `Last-Modified` headers provided caching control.
 - Caching reduced redundant data transfer, improving web speed.
-
-### 9. Virtual Hosting with the Host Header
-- The `Host` header allowed multiple domains to share the same IP address.
-- This enabled web hosting providers to offer cost-effective shared hosting solutions.
 
 ---
 ## Advantages and Disadvantages of HTTP/1.0
