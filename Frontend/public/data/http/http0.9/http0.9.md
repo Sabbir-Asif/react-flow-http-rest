@@ -23,10 +23,6 @@ GET /index.html
 ```
 
 ### 3. Response Mechanism
-#### Response Constraints
-- **Content Type**: Always returned raw HTML files.
-- **No Status Codes**: No way to indicate success or failure.
-- **No Response Headers**: No metadata was transmitted.
 
 #### Response Example
 ```
@@ -35,7 +31,14 @@ Welcome to the example.re homepage!
 </html>
 ```
 
-<img src="/data/http/http0.9/asset/0.9.png" height=400 width=500>
+<figure>
+  <div align="center">
+    <img src="/data/http/http0.9/asset/0.9.png" height="400" width="700" style="border: 2px solid black;">
+  </div>
+  <figcaption style="text-align: center"></figcaption>  
+</figure>
+<!-- 
+<img src="/data/http/http0.9/asset/0.9.png" height=400 width=500> -->
 
 ### 4. Error Handling
 - **No Standard Error Codes**: No mechanism to indicate errors like 404 Not Found.
