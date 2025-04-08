@@ -674,7 +674,7 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 15, y: 2450 },
     data: { 
-      label: 'Persistent, Multiplexing',
+      label: 'Multiplexing',
       version: '2.0',
       drawer: true,
       year: '2015', 
@@ -687,7 +687,7 @@ export const initialNodes = [
     type: 'header',
     position: { x: 20, y: 2570 },
     data: { 
-      label: ':method, :scheme, : authority, :path, accept-encoding',
+      label: 'Header Compression, Server Push',
       version: '2.0',
       drawer: true,
       year: '2015', 
