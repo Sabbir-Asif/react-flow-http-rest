@@ -82,7 +82,7 @@ Content-Type: image/gif
 
 <figure>
   <div align="center">
-    <img src="data/http/http1.0/asset/http1.0.png" height="400" width="700" style="border: 2px solid black;">
+    <img src="data/http/http1.0/asset/http1.0.png" height="300" width="500" style="border: 2px solid black;">
   </div>
   <figcaption style="text-align: center"></figcaption>  
 </figure>
