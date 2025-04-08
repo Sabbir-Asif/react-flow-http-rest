@@ -809,7 +809,7 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 30, y: 2920 },
     data: { 
-      label: 'Third Party Cookies Blocked',
+      label: 'Third Party Cookies',
       year: '2020', 
       drawer: true,
       description: 'This is the first node',
