@@ -33,7 +33,7 @@ Welcome to the example.re homepage!
 
 <figure>
   <div align="center">
-    <img src="/data/http/http0.9/asset/0.9.png" height="400" width="700" style="border: 2px solid black;">
+    <img src="/data/http/http0.9/asset/http0.9.png" height="400" width="700" style="border: 2px solid black;">
   </div>
   <figcaption style="text-align: center"></figcaption>  
 </figure>
