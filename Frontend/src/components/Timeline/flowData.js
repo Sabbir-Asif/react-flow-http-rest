@@ -896,17 +896,29 @@ export const initialNodes = [
 ];
 
 export const initialEdges = [
+  // {
+  //   id: 'e0-0.1',
+  //   source: '0',
+  //   sourceHandle: 'bottom',
+  //   target: '0.1',
+  //   targetHandle: 'top',
+  //   style: { 
+  //     strokeWidth: 2, 
+  //     stroke: '#333333' 
+  //   },
+  //   animated: false,
+  // },
   {
-    id: 'e0-0.1',
-    source: '0',
+    id: 'e0.1-1',
+    source: '0.1',
     sourceHandle: 'bottom',
-    target: '0.1',
+    target: '1',
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
     },
-    animated: false,
+    animated: true,
   },
   {
     id: 'e1-2',
