@@ -1,0 +1,38 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" font-size="20" text-anchor="middle" font-weight="bold">HTTP Accept Header Negotiation</text>
+  
+  <!-- Client -->
+  <rect x="100" y="100" width="120" height="60" rx="10" fill="#4CAF50" stroke="#2E7D32"/>
+  <text x="160" y="135" fill="white" text-anchor="middle">Client</text>
+  
+  <!-- Server -->
+  <rect x="420" y="100" width="120" height="60" rx="10" fill="#2196F3" stroke="#0D47A1"/>
+  <text x="480" y="135" fill="white" text-anchor="middle">Server</text>
+  
+  <!-- Request Arrow -->
+  <path d="M 220 130 L 420 130" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="320" y="120" font-size="14" text-anchor="middle">Accept: text/html, image/webp</text>
+  
+  <!-- Decision Tree -->
+  <rect x="420" y="200" width="120" height="60" rx="10" fill="#FFC107" stroke="#FF9800"/>
+  <text x="480" y="235" text-anchor="middle">Has HTML?</text>
+  
+  <!-- Yes/No Paths -->
+  <path d="M 460 260 L 460 300 L 300 300 L 300 360" stroke="#555" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <path d="M 460 260 L 460 300 L 600 300 L 600 360" stroke="#555" stroke-width="2" fill="none"/>
+  
+  <!-- Responses -->
+  <rect x="200" y="360" width="200" height="60" rx="10" fill="#8BC34A" stroke="#689F38"/>
+  <text x="300" y="395" text-anchor="middle">Respond with HTML</text>
+  
+  <rect x="500" y="360" width="200" height="60" rx="10" fill="#00BCD4" stroke="#0097A7"/>
+  <text x="600" y="395" text-anchor="middle">Respond with WebP</text>
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+  </defs>
+</svg>

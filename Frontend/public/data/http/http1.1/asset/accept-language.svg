@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f5f7fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-size="24" text-anchor="middle" fill="#2d3748" font-weight="bold" font-family="Arial, sans-serif">HTTP Accept-Language Header</text>
+  <text x="400" y="70" font-size="16" text-anchor="middle" fill="#4a5568" font-family="Arial, sans-serif">Enabling Content Internationalization</text>
+  
+  <!-- Client -->
+  <rect x="80" y="120" width="140" height="70" rx="10" fill="#4CAF50" stroke="#2E7D32" stroke-width="2" />
+  <text x="150" y="160" font-size="20" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">Client</text>
+  
+  <!-- Client language preferences bubble -->
+  <rect x="55" y="210" width="190" height="70" rx="10" fill="white" stroke="#4CAF50" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="150" y="225" font-size="12" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">User Language Preferences</text>
+  <text x="150" y="250" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Arial, sans-serif">English (Primary)</text>
+  <text x="150" y="270" font-size="14" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">French (Secondary)</text>
+  
+  <!-- Server -->
+  <rect x="580" y="120" width="140" height="70" rx="10" fill="#2196F3" stroke="#0D47A1" stroke-width="2" />
+  <text x="650" y="160" font-size="20" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">Server</text>
+  
+  <!-- Server content options bubble -->
+  <rect x="505" y="210" width="290" height="160" rx="10" fill="white" stroke="#2196F3" stroke-width="2" stroke-dasharray="4,2" />
+  <text x="650" y="235" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Arial, sans-serif">Available Content Versions</text>
+  
+  <!-- English content -->
+  <rect x="525" y="250" width="100" height="100" rx="5" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" />
+  <text x="575" y="285" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Arial, sans-serif">English</text>
+  <text x="575" y="305" font-size="12" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">en-US</text>
+  <rect x="545" y="320" width="60" height="15" fill="#e0e0e0" />
+  <rect x="545" y="340" width="60" height="5" fill="#e0e0e0" />
+  
+  <!-- French content -->
+  <rect x="675" y="250" width="100" height="100" rx="5" fill="#fff3e0" stroke="#ffcc80" stroke-width="1" />
+  <text x="725" y="285" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Arial, sans-serif">French</text>
+  <text x="725" y="305" font-size="12" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">fr</text>
+  <rect x="695" y="320" width="60" height="15" fill="#e0e0e0" />
+  <rect x="695" y="340" width="60" height="5" fill="#e0e0e0" />
+  
+  <!-- HTTP Request with Accept-Language header -->
+  <path d="M 220 155 L 570 155" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <rect x="260" y="105" width="280" height="40" rx="5" fill="#FFC107" stroke="#FFA000" stroke-width="1" />
+  <text x="400" y="130" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Courier New, monospace">Accept-Language: en-US, fr;q=0.5</text>
+  
+  <!-- Response path with content negotiation -->
+  <path d="M 525 300 L 260 300" stroke="#555" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <rect x="290" y="260" width="220" height="80" rx="5" fill="#e3f2fd" stroke="#90caf9" stroke-width="1" />
+  <text x="400" y="280" font-size="14" text-anchor="middle" fill="#333" font-weight="bold" font-family="Arial, sans-serif">Response</text>
+  <text x="400" y="300" font-size="12" text-anchor="middle" fill="#333" font-family="Courier New, monospace">Content-Language: en-US</text>
+  <text x="400" y="320" font-size="12" text-anchor="middle" fill="#333" font-family="Arial, sans-serif">English Content Selected</text>
+  <text x="400" y="335" font-size="10" text-anchor="middle" fill="#555" font-style="italic" font-family="Arial, sans-serif">(Based on client preference)</text>
+  
+  <!-- Benefits -->
+  <rect x="45" y="380" width="750" height="50" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2" />
+  <text x="400" y="405" font-size="14" text-anchor="middle" fill="#2d3748" font-weight="bold" font-family="Arial, sans-serif">Benefits: Single URL • Content Negotiation • Improved User Experience • Simplified Content Management</text>
+  
+  <!-- Before & After Comparison (simplified) -->
+  <text x="250" y="445" font-size="12" text-anchor="middle" fill="#555" font-family="Arial, sans-serif">Before: Separate URLs (example.com/en, example.com/fr)</text>
+  <text x="550" y="445" font-size="12" text-anchor="middle" fill="#555" font-family="Arial, sans-serif">After: Single URL with language negotiation</text>
+  
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+</svg>
