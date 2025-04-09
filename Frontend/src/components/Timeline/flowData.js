@@ -213,7 +213,8 @@ export const initialNodes = [
       label: 'Pragma, Expires',
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/caching/2.2.5_pragma.md', 
+      filePath: '/data/caching/2.2.5_pragma.md',
+      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires']
     },
   },
   {
@@ -237,6 +238,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http1.1/http1.1.md', 
+      breadcrumb: ['1995', 'HTTP/1.1']
     },
   },
   {
@@ -249,6 +251,7 @@ export const initialNodes = [
       additional: '(by default)',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.1_Persistent.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Persistent']
     },
   },
   {
@@ -260,6 +263,7 @@ export const initialNodes = [
       additional: 'Connection, Cache-Control, Expires, Host, Encodings',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.2_Header.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Header']
     },
   },
   {
@@ -271,6 +275,7 @@ export const initialNodes = [
       additional: '202, 206, 301, 304, 403, 410',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.3_StatusCode.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'StatusCode']
     },
   },
   {
@@ -282,6 +287,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/caching/2.2.3_Cache_Control.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Cache-Control, Directives, ETag, Last-Modified, Vary']
     },
   },
   {
@@ -293,6 +299,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/2.3.5_set_cookie.md',
+      breadcrumb: ['1995', 'HTTP/1.1', 'Cookie, Set-Cookie']
     },
   },
   {
@@ -464,7 +471,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.1_IntroduceJSONP.md', 
-      breadcrumbs: ['2005', 'JSONP'],
+      breadcrumb: ['2005', 'JSONP'],
     },
   },
   {
@@ -488,7 +495,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/rest/4.2_RMM.md', 
-      breadcrumbs: ['2005', 'RMM'],
+      breadcrumb: ['2005', 'RMM'],
     },
   },
   {
@@ -512,7 +519,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.3_IntroduceCORS.md', 
-      breadcrumbs: ['2005', 'CORS'],
+      breadcrumb: ['2005', 'CORS'],
     },
   },
   {
@@ -536,7 +543,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/CORS/4.3.2_Access_Control_Allow_Origin.md', 
-      breadcrumbs: ['2005', 'CORS','Access-Control-Allow-Origin'],
+      breadcrumb: ['2005', 'CORS','Access-Control-Allow-Origin'],
     },
   },
   {
@@ -549,7 +556,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.3.1_Preflight_Request.md', 
-      breadcrumbs: ['2005', 'CORS','Preflight Request'],
+      breadcrumb: ['2005', 'CORS','Preflight Request'],
     },
   },
   {
@@ -869,7 +876,7 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 800, y: 2900 },
     data: { 
-      label: 'QUIC, 0-RTT',
+      label: 'QUIC',
       version: '3.0',
       drawer: true,
       year: '2020', 
@@ -878,9 +885,23 @@ export const initialNodes = [
     },
   },
   {
-    id: '7.2.2',
+    id: '7.2.1.2',
     type: 'connection',
-    position: { x: 900, y: 3000 },
+    position: { x: 950, y: 3000 },
+    data: { 
+      label: ' 0-RTT',
+      version: '3.0',
+      drawer: true,
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/data/HTTP_3/7.2.1.2_zeroRTT.md', 
+    },
+  },
+
+  {
+    id: '7.2.1.1',
+    type: 'connection',
+    position: { x: 950, y: 2800 },
     data: { 
       label: 'Multiplexing',
       additional: '(Without HOL)',
@@ -888,11 +909,11 @@ export const initialNodes = [
       drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/data/HTTP_3/7.2.2_Multiplexing.md', 
+      filePath: '/data/HTTP_3/7.2.1.1_Multiplexing.md', 
     },
   },
   {
-    id: '7.2.3',
+    id: '7.2.2',
     type: 'connection',
     position: { x: 820, y: 3100 },
     data: { 
@@ -1628,6 +1649,30 @@ export const initialEdges = [
     animated: true,
   },
   {
+    id: '7.2.1-7.2.1.1',
+    source: '7.2.1',
+    sourceHandle: 'top',
+    target: '7.2.1.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.2.1-7.2.1.2',
+    source: '7.2.1',
+    sourceHandle: 'bottom',
+    target: '7.2.1.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
     id: '7.2-7.2.2',
     source: '7.2',
     sourceHandle: 'right',
@@ -1639,16 +1684,5 @@ export const initialEdges = [
     },
     animated: true,
   },
-  {
-    id: '7.2-7.2.3',
-    source: '7.2',
-    sourceHandle: 'right',
-    target: '7.2.3',
-    targetHandle: 'left',
-    style: { 
-      strokeWidth: 2, 
-      stroke: '#333333' 
-    },
-    animated: true,
-  },
+
 ];
