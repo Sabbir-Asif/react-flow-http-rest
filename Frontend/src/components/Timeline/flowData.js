@@ -691,7 +691,7 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 15, y: 2450 },
     data: { 
-      label: 'Binary Framing, Multiplexing',
+      label: 'Multiplexing, Binary Framing',
       version: '2.0',
       drawer: true,
       year: '2015', 
