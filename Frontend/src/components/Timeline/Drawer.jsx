@@ -11,22 +11,24 @@ import { visit } from 'unist-util-visit';
 const remarkExtractStyles = () => {
   return (tree, file) => {
     const styles = [];
-    
+
     visit(tree, 'html', (node) => {
       if (node.value.startsWith('<style') && node.value.endsWith('</style>')) {
         styles.push(node.value);
         node.value = '';
       }
     });
-    
+
     file.data.styles = styles.join('\n');
   };
 };
 
-const Drawer = ({ isOpen, onClose, filePath }) => {
+const Drawer = ({ isOpen, onClose, filePath, breadcrumb }) => {
   const [markdownContent, setMarkdownContent] = useState("");
   const [extractedStyles, setExtractedStyles] = useState("");
   const [loading, setLoading] = useState(true);
+
+  console.log(breadcrumb);
 
   useEffect(() => {
     if (isOpen && filePath) {
@@ -35,12 +37,12 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
         .then(res => res.text())
         .then(data => {
           setMarkdownContent(data);
-          
+
           const styleMatches = data.match(/<style[^>]*>([\s\S]*?)<\/style>/g) || [];
           if (styleMatches.length > 0) {
             setExtractedStyles(styleMatches.join('\n'));
           }
-          
+
           setLoading(false);
         })
         .catch(err => {
@@ -53,15 +55,15 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
 
   return (
     <div className={`fixed inset-0 z-50 overflow-hidden ${isOpen ? 'block' : 'hidden'}`}>
-      <div 
-        className="absolute inset-0 bg-black bg-opacity-50 transition-opacity" 
+      <div
+        className="absolute inset-0 bg-black bg-opacity-50 transition-opacity"
         onClick={onClose}
       ></div>
-      
+
       <div className={`absolute inset-y-0 right-0 max-w-full flex transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="w-screen max-w-7xl md:max-w-5xl">
           <div className="h-full flex flex-col bg-[#FDFAF6] shadow-xl">
-            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+            <div className="flex items-center justify-start gap-6 md:gap-10 px-4 py-3 border-b border-gray-200">
               <button
                 onClick={onClose}
                 className="text-gray-500 hover:text-gray-700 focus:outline-none"
@@ -70,8 +72,15 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
+              <div className="breadcrumbs text-md font-medium font-nunito">
+                <ul>
+                  {
+                    breadcrumb?.map(bc => <li>{bc}</li>)
+                  }
+                </ul>
+              </div>
             </div>
-            
+
             <div className="flex-1 overflow-y-auto p-10 lg:p-12">
               {loading ? (
                 <div className="flex justify-center items-center h-full">
@@ -82,7 +91,7 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
                   {extractedStyles && (
                     <div dangerouslySetInnerHTML={{ __html: extractedStyles }} />
                   )}
-                  
+
                   <style>{`
                     .markdown-container {
                       color: #24292e;
@@ -174,12 +183,12 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
                       color: #24292e;
                     }
                   `}</style>
-                  
+
                   <div className="markdown-container">
                     <ReactMarkdown
                       children={markdownContent}
                       remarkPlugins={[
-                        [remarkGfm, {singleTilde: true}],
+                        [remarkGfm, { singleTilde: true }],
                         remarkFrontmatter,
                         remarkDirective,
                         remarkExtractStyles,
@@ -187,7 +196,7 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
                       rehypePlugins={[
                         rehypeRaw,
                         rehypeSlug,
-                        [rehypeHighlight, { 
+                        [rehypeHighlight, {
                           ignoreMissing: true,
                           aliases: {
                             javascript: ['js', 'jsx'],
@@ -198,19 +207,19 @@ const Drawer = ({ isOpen, onClose, filePath }) => {
                       ]}
                       components={{
                         ul: ({ depth, className, ...props }) => (
-                          <ul 
+                          <ul
                             className={`${className || ''} list-disc pl-${depth ? depth * 4 : 8} my-2`}
                             {...props}
                           />
                         ),
                         ol: ({ depth, className, ...props }) => (
-                          <ol 
+                          <ol
                             className={`${className || ''} list-decimal pl-${depth ? depth * 4 : 8} my-2`}
                             {...props}
                           />
                         ),
                         li: ({ className, ordered, ...props }) => (
-                          <li 
+                          <li
                             className={`${className || ''} mb-1`}
                             {...props}
                           />
