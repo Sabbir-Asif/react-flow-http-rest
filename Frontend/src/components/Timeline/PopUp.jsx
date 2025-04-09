@@ -11,19 +11,19 @@ import { visit } from 'unist-util-visit';
 const remarkExtractStyles = () => {
   return (tree, file) => {
     const styles = [];
-    
+
     visit(tree, 'html', (node) => {
       if (node.value.startsWith('<style') && node.value.endsWith('</style>')) {
         styles.push(node.value);
         node.value = '';
       }
     });
-    
+
     file.data.styles = styles.join('\n');
   };
 };
 
-const PopUp = ({ isOpen, onClose, filePath }) => {
+const PopUp = ({ isOpen, onClose, filePath, breadcrumb }) => {
   const [markdownContent, setMarkdownContent] = useState("");
   const [extractedStyles, setExtractedStyles] = useState("");
   const [loading, setLoading] = useState(true);
@@ -35,13 +35,13 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
         .then(res => res.text())
         .then(data => {
           setMarkdownContent(data);
-          
+
           // Extract styles using regex as a fallback
           const styleMatches = data.match(/<style[^>]*>([\s\S]*?)<\/style>/g) || [];
           if (styleMatches.length > 0) {
             setExtractedStyles(styleMatches.join('\n'));
           }
-          
+
           setLoading(false);
         })
         .catch(err => {
@@ -55,13 +55,21 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
   return (
     <dialog className={`modal ${isOpen ? 'modal-open' : ''}`}>
       <div className="modal-box w-11/12 max-w-5xl max-h-[90vh] bg-[#FDFAF6]">
-        <button 
-          className="btn btn-sm btn-circle absolute right-2 top-2" 
+        <div className="breadcrumbs text-md font-medium font-nunito ml-8 md:ml-12">
+          <ul>
+            {
+              breadcrumb?.map(bc => <li>{bc}</li>)
+            }
+          </ul>
+        </div>
+        <button
+          className="btn btn-sm btn-circle absolute left-4 top-6"
           onClick={onClose}
         >
           ✕
         </button>
-        
+        <hr className="h-1" />
+
         {loading ? (
           <div className="flex justify-center items-center h-64">
             <span className="loading loading-infinity loading-lg"></span>
@@ -71,7 +79,7 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
             {extractedStyles && (
               <div dangerouslySetInnerHTML={{ __html: extractedStyles }} />
             )}
-            
+
             <style>{`
               .markdown-container {
                 color: #24292e;
@@ -163,12 +171,12 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
                 color: #24292e;
               }
             `}</style>
-            
+
             <div className="markdown-container">
               <ReactMarkdown
                 children={markdownContent}
                 remarkPlugins={[
-                  [remarkGfm, {singleTilde: true}],
+                  [remarkGfm, { singleTilde: true }],
                   remarkFrontmatter,
                   remarkDirective,
                   remarkExtractStyles,
@@ -176,7 +184,7 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
                 rehypePlugins={[
                   rehypeRaw,
                   rehypeSlug,
-                  [rehypeHighlight, { 
+                  [rehypeHighlight, {
                     ignoreMissing: true,
                     aliases: {
                       javascript: ['js', 'jsx'],
@@ -187,19 +195,19 @@ const PopUp = ({ isOpen, onClose, filePath }) => {
                 ]}
                 components={{
                   ul: ({ depth, className, ...props }) => (
-                    <ul 
+                    <ul
                       className={`${className || ''} list-disc pl-${depth ? depth * 4 : 8} my-2`}
                       {...props}
                     />
                   ),
                   ol: ({ depth, className, ...props }) => (
-                    <ol 
+                    <ol
                       className={`${className || ''} list-decimal pl-${depth ? depth * 4 : 8} my-2`}
                       {...props}
                     />
                   ),
                   li: ({ className, ordered, ...props }) => (
-                    <li 
+                    <li
                       className={`${className || ''} mb-1`}
                       {...props}
                     />
