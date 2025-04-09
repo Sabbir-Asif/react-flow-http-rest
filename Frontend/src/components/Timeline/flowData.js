@@ -471,7 +471,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.1_IntroduceJSONP.md', 
-      breadcrumbs: ['2005', 'JSONP'],
+      breadcrumb: ['2005', 'JSONP'],
     },
   },
   {
@@ -495,7 +495,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/rest/4.2_RMM.md', 
-      breadcrumbs: ['2005', 'RMM'],
+      breadcrumb: ['2005', 'RMM'],
     },
   },
   {
@@ -519,7 +519,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.3_IntroduceCORS.md', 
-      breadcrumbs: ['2005', 'CORS'],
+      breadcrumb: ['2005', 'CORS'],
     },
   },
   {
@@ -543,7 +543,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/CORS/4.3.2_Access_Control_Allow_Origin.md', 
-      breadcrumbs: ['2005', 'CORS','Access-Control-Allow-Origin'],
+      breadcrumb: ['2005', 'CORS','Access-Control-Allow-Origin'],
     },
   },
   {
@@ -556,7 +556,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/CORS/4.3.1_Preflight_Request.md', 
-      breadcrumbs: ['2005', 'CORS','Preflight Request'],
+      breadcrumb: ['2005', 'CORS','Preflight Request'],
     },
   },
   {
