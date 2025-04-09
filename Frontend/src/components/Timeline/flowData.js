@@ -213,7 +213,8 @@ export const initialNodes = [
       label: 'Pragma, Expires',
       description: 'This is the first node',
       drawer: true,
-      filePath: '/data/caching/2.2.5_pragma.md', 
+      filePath: '/data/caching/2.2.5_pragma.md',
+      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires']
     },
   },
   {
@@ -237,6 +238,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http1.1/http1.1.md', 
+      breadcrumb: ['1995', 'HTTP/1.1']
     },
   },
   {
@@ -249,6 +251,7 @@ export const initialNodes = [
       additional: '(by default)',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.1_Persistent.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Persistent']
     },
   },
   {
@@ -260,6 +263,7 @@ export const initialNodes = [
       additional: 'Connection, Cache-Control, Expires, Host, Encodings',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.2_Header.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Header']
     },
   },
   {
@@ -271,6 +275,7 @@ export const initialNodes = [
       additional: '202, 206, 301, 304, 403, 410',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.3_StatusCode.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'StatusCode']
     },
   },
   {
@@ -282,6 +287,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/caching/2.2.3_Cache_Control.md', 
+      breadcrumb: ['1995', 'HTTP/1.1', 'Cache-Control, Directives, ETag, Last-Modified, Vary']
     },
   },
   {
@@ -293,6 +299,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/2.3.5_set_cookie.md',
+      breadcrumb: ['1995', 'HTTP/1.1', 'Cookie, Set-Cookie']
     },
   },
   {
