@@ -876,7 +876,7 @@ export const initialNodes = [
     type: 'connection',
     position: { x: 800, y: 2900 },
     data: { 
-      label: 'QUIC, 0-RTT',
+      label: 'QUIC',
       version: '3.0',
       drawer: true,
       year: '2020', 
@@ -885,9 +885,23 @@ export const initialNodes = [
     },
   },
   {
-    id: '7.2.2',
+    id: '7.2.1.2',
     type: 'connection',
-    position: { x: 900, y: 3000 },
+    position: { x: 950, y: 3000 },
+    data: { 
+      label: ' 0-RTT',
+      version: '3.0',
+      drawer: true,
+      year: '2020', 
+      description: 'This is the first node',
+      filePath: '/data/HTTP_3/7.2.1.2_zeroRTT.md', 
+    },
+  },
+
+  {
+    id: '7.2.1.1',
+    type: 'connection',
+    position: { x: 950, y: 2800 },
     data: { 
       label: 'Multiplexing',
       additional: '(Without HOL)',
@@ -895,11 +909,11 @@ export const initialNodes = [
       drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/data/HTTP_3/7.2.2_Multiplexing.md', 
+      filePath: '/data/HTTP_3/7.2.1.1_Multiplexing.md', 
     },
   },
   {
-    id: '7.2.3',
+    id: '7.2.2',
     type: 'connection',
     position: { x: 820, y: 3100 },
     data: { 
@@ -1635,6 +1649,30 @@ export const initialEdges = [
     animated: true,
   },
   {
+    id: '7.2.1-7.2.1.1',
+    source: '7.2.1',
+    sourceHandle: 'top',
+    target: '7.2.1.1',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
+    id: '7.2.1-7.2.1.2',
+    source: '7.2.1',
+    sourceHandle: 'bottom',
+    target: '7.2.1.2',
+    targetHandle: 'left',
+    style: { 
+      strokeWidth: 2, 
+      stroke: '#333333' 
+    },
+    animated: true,
+  },
+  {
     id: '7.2-7.2.2',
     source: '7.2',
     sourceHandle: 'right',
@@ -1646,16 +1684,5 @@ export const initialEdges = [
     },
     animated: true,
   },
-  {
-    id: '7.2-7.2.3',
-    source: '7.2',
-    sourceHandle: 'right',
-    target: '7.2.3',
-    targetHandle: 'left',
-    style: { 
-      strokeWidth: 2, 
-      stroke: '#333333' 
-    },
-    animated: true,
-  },
+
 ];
