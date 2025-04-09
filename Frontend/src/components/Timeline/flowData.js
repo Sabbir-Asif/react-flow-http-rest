@@ -3,7 +3,7 @@ export const initialNodes = [
   {
     id: '0',
     type: 'pointNode',
-    position: { x: 507, y: 100 },
+    position: { x: 502, y: 230 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -915,8 +915,8 @@ export const initialEdges = [
   //   animated: false,
   // },
   {
-    id: 'e0.1-1',
-    source: '0.1',
+    id: 'e0-1',
+    source: '0',
     sourceHandle: 'bottom',
     target: '1',
     targetHandle: 'top',
@@ -924,7 +924,7 @@ export const initialEdges = [
       strokeWidth: 2, 
       stroke: '#333333' 
     },
-    animated: true,
+    animated: false,
   },
   {
     id: 'e1-2',
