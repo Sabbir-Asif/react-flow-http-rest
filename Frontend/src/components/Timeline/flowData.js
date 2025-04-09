@@ -608,6 +608,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/5.2.1_local.md',
+      breadcramp: ['client side storage', 'local storage'],
     },
   },
   {
