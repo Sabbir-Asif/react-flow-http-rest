@@ -584,6 +584,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/5.1_patch_introduced.md', 
+      breadcrumb: ['2010', 'Introduce PATCH Method']
     },
   },
   {
@@ -607,6 +608,7 @@ export const initialNodes = [
       description: 'This is the first node',
       popUp: true,
       filePath: '/data/cookies/5.2_modern_storage.md',
+      breadcrumb: ['2010', 'Client Side Storage']
     },
   },
   {
@@ -619,6 +621,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/5.2.1_local.md',
+      breadcrumb: ['2010', 'Client Side Storage', 'Local Storage']
     },
   },
   {
@@ -631,6 +634,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/5.2.2_session.md',
+      breadcrumb: ['2010', 'Client Side Storage', 'Session Storage']
     },
   },
   {
@@ -643,6 +647,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/5.2.3_indexedDB.md',
+      breadcrumb: ['2010', 'Client Side Storage', 'IndexedDB']
     },
   },
   {
@@ -678,6 +683,7 @@ export const initialNodes = [
       year: '2015', 
       description: 'This is the first node',
       filePath: '/data/HTTP_2/6.1.md', 
+      breadcrumb: ['2015', 'HTTP 2.0']
     },
   },
   {
@@ -691,6 +697,7 @@ export const initialNodes = [
       year: '2015', 
       description: 'This is the first node',
       filePath: '/data/HTTP_2/6.1.1.md', 
+      breadcrumb: ['2015', 'HTTP 2.0', 'Binary Framing, Multiplexing']
     },
   },
   {
@@ -704,6 +711,7 @@ export const initialNodes = [
       year: '2015', 
       description: 'This is the first node',
       filePath: '/data/HTTP_2/6.1.2.md', 
+      breadcrumb: ['2015', 'HTTP 2.0', 'Header Compression, Server Push']
     },
   },
   {
@@ -728,6 +736,7 @@ export const initialNodes = [
       description: 'This is the first node',
       popUp: true,
       filePath: '/data/cookies/6.2_samesite.md',
+      breadcrumb: ['2015', 'Introduce Samesite Cookie']
     },
   },
   {
@@ -741,6 +750,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/6.2.1_strict.md',
+      breadcrumb: ['2015', 'Introduce Samesite Cookie', 'Strict']
     },
   },
   {
@@ -754,6 +764,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/6.2.2_lax.md',
+      breadcrumb: ['2015', 'Introduce Samesite Cookie', 'Lax']
     },
   },
   {
@@ -767,6 +778,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/cookies/6.2.3_none.md',
+      breadcrumb: ['2015', 'Introduce Samesite Cookie', 'None']
     },
   },
   {
