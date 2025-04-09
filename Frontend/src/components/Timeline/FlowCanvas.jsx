@@ -40,9 +40,13 @@ const FlowCanvas = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [popUpOpen, setPopUpOpen] = useState(false);
   const [selectedFilePath, setSelectedFilePath] = useState(null);
+  const [breadcrumb, setBreadCrumb] = useState(null);
 
   const onNodeClick = (event, node) => {
     if (node.data && node.data.filePath) {
+      if(node.data.breadcrumb){
+        setBreadCrumb(node.data.breadcrumb);
+      }
       setSelectedFilePath(node.data.filePath);
       if (node.data.popUp) {
         setPopUpOpen(true);
@@ -97,8 +101,8 @@ const FlowCanvas = () => {
         </ReactFlow>
       </div>
 
-      <Drawer isOpen={drawerOpen} onClose={closeDrawer} filePath={selectedFilePath} />
-      <PopUp isOpen={popUpOpen} onClose={closePopUp} filePath={selectedFilePath} />
+      <Drawer isOpen={drawerOpen} onClose={closeDrawer} filePath={selectedFilePath} breadcrumb={breadcrumb} />
+      <PopUp isOpen={popUpOpen} onClose={closePopUp} filePath={selectedFilePath} breadcrumb={breadcrumb} />
     </div>
   );
 };
