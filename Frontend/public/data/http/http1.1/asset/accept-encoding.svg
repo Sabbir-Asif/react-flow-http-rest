@@ -1,0 +1,68 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="550" fill="#f8f9fa" rx="15" ry="15"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-size="28" text-anchor="middle" fill="#2d3748" font-weight="bold" font-family="Arial, sans-serif">HTTP Accept-Encoding Compression</text>
+  
+  <!-- Client -->
+  <rect x="50" y="120" width="150" height="80" rx="12" fill="#4CAF50" stroke="#2E7D32" stroke-width="3" filter="drop-shadow(3px 3px 3px rgba(0,0,0,0.2))"/>
+  <text x="125" y="165" font-size="22" fill="white" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">Client</text>
+  
+  <!-- Server -->
+  <rect x="600" y="120" width="150" height="80" rx="12" fill="#2196F3" stroke="#0D47A1" stroke-width="3" filter="drop-shadow(3px 3px 3px rgba(0,0,0,0.2))"/>
+  <text x="675" y="165" font-size="22" fill="white" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">Server</text>
+  
+  <!-- Request Arrow -->
+  <path d="M 200 160 L 595 160" stroke="#555" stroke-width="4" fill="none" marker-end="url(#arrowHead)" stroke-dasharray="0"/>
+  
+  <!-- Request Header -->
+  <rect x="250" y="110" width="290" height="40" rx="8" fill="#f9a826" stroke="#f57f17" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  <text x="395" y="135" font-size="16" text-anchor="middle" fill="#333" font-weight="bold" font-family="Courier New, monospace">Accept-Encoding: gzip, deflate</text>
+  
+  <!-- Response Arrow -->
+  <path d="M 600 200 L 205 200" stroke="#555" stroke-width="4" fill="none" marker-end="url(#arrowHead)" stroke-dasharray="0"/>
+  
+  <!-- Response Header -->
+  <rect x="250" y="210" width="290" height="40" rx="8" fill="#f9a826" stroke="#f57f17" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  <text x="395" y="235" font-size="16" text-anchor="middle" fill="#333" font-weight="bold" font-family="Courier New, monospace">Content-Encoding: gzip</text>
+  
+  <!-- Compression Visualization Section -->
+  <rect x="100" y="290" width="600" height="230" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.1))"/>
+  <text x="400" y="320" font-size="22" text-anchor="middle" fill="#2d3748" font-weight="bold" font-family="Arial, sans-serif">Compression Benefit</text>
+  
+  <!-- Original Data -->
+  <rect x="150" y="350" width="500" height="40" rx="8" fill="#FF9800" stroke="#F57C00" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  <text x="400" y="375" font-size="18" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">Original HTML/CSS/JS Data (100KB)</text>
+  
+  <!-- Compression Process -->
+  <path d="M 400 390 L 400 455" stroke="#555" stroke-width="3" fill="none" marker-end="url(#arrowHead)" stroke-dasharray="0"/>
+  
+  <!-- Compression Engine -->
+  <circle cx="340" cy="425" r="25" fill="#673AB7" stroke="#4527A0" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.2))"/>
+  <text x="340" y="430" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">gzip</text>
+  
+  <!-- Compressed Data -->
+  <rect x="250" y="460" width="300" height="40" rx="8" fill="#8BC34A" stroke="#689F38" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.15))"/>
+  <text x="400" y="485" font-size="18" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">Compressed Data (25KB)</text>
+  
+  <!-- Stats and Benefits Section -->
+  <rect x="100" y="530" width="600" height="40" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="400" y="555" font-size="18" text-anchor="middle" fill="#2d3748" font-weight="bold" font-family="Arial, sans-serif">Benefits: 75% Size Reduction • Faster Page Load • Less Bandwidth</text>
+  
+<!-- Icons for Visual Enhancement -->
+  <!-- Download Speed Icon -->
+  <circle cx="450" cy="420" r="20" fill="#03A9F4" stroke="#0288D1" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.2))"/>
+  <text x="450" y="425" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">↑↑</text>
+  
+  <!-- Bandwidth Saving Icon -->
+  <circle cx="500" cy="420" r="20" fill="#E91E63" stroke="#C2185B" stroke-width="2" filter="drop-shadow(2px 2px 2px rgba(0,0,0,0.2))"/>
+  <text x="500" y="425" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="Arial, sans-serif">$</text>
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#555"/>
+    </marker>
+  </defs>
+</svg>
