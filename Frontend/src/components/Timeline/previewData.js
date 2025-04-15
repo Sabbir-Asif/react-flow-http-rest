@@ -128,7 +128,7 @@ export const previewNodes = [
   {
     id: '2.1',
     type: 'eventNode',
-    position: { x: 318, y: 600 },
+    position: { x: 110, y: 570 },
     data: { 
       label: 'Same Origin Policy',
       year: '1995', 
@@ -140,7 +140,7 @@ export const previewNodes = [
   {
     id: '2^2.1',
     type: 'pointNode',
-    position: { x: 501, y: 646 },
+    position: { x: 67, y: 616 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -151,7 +151,7 @@ export const previewNodes = [
   {
     id: '2.2',
     type: 'http',
-    position: { x: 628, y: 649 },
+    position: { x: 110, y: 679 },
     data: { 
       label: 'HTTP',
       version: '1.0',
@@ -163,7 +163,7 @@ export const previewNodes = [
   {
     id: '2.2.1',
     type: 'connection',
-    position: { x: 794, y: 526 },
+    position: { x: 294, y: 556 },
     data: { 
       drawer: true,
       label: 'Non Persistent',
@@ -175,7 +175,7 @@ export const previewNodes = [
   {
     id: '2.2.2',
     type: 'method',
-    position: { x: 923, y: 614 },
+    position: { x: 423, y: 644 },
     data: { 
       drawer: true,
       additional: 'POST, PUT, DELETE, HEAD, OPTIONS, TRACE',
@@ -186,7 +186,7 @@ export const previewNodes = [
   {
     id: '2.2.3',
     type: 'header',
-    position: { x: 892, y: 715 },
+    position: { x: 392, y: 745 },
     data: { 
       drawer: true,
       additional: 'Content-Type, Content-Length, Date',
@@ -197,7 +197,7 @@ export const previewNodes = [
   {
     id: '2.2.4',
     type: 'statusCode',
-    position: { x: 824, y: 814 },
+    position: { x: 324, y: 824 },
     data: { 
       drawer: true,
       label: '1xx-5xx introduced',
@@ -208,7 +208,7 @@ export const previewNodes = [
   {
     id: '2.2.5',
     type: 'caching',
-    position: { x: 597, y: 764 },
+    position: { x: 97, y: 794 },
     data: { 
       label: 'Pragma, Expires',
       description: 'This is the first node',
@@ -220,7 +220,7 @@ export const previewNodes = [
   {
     id: '2^2.2',
     type: 'pointNode',
-    position: { x: 503, y: 663 },
+    position: { x: 67, y: 693 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -231,7 +231,7 @@ export const previewNodes = [
   {
     id: '2.3',
     type: 'http',
-    position: { x: 310, y: 938 },
+    position: { x: 110, y: 968 },
     data: { 
       label: 'HTTP',
       version: '1.1',
@@ -244,7 +244,7 @@ export const previewNodes = [
   {
     id: '2.3.1',
     type: 'connection',
-    position: { x: 134, y: 753 },
+    position: { x: 253, y: 893 },
     data: { 
       drawer: true,
       label: 'Persistent',
@@ -257,7 +257,7 @@ export const previewNodes = [
   {
     id: '2.3.2',
     type: 'header',
-    position: { x: 2, y: 857 },
+    position: { x: 373, y: 982 },
     data: { 
       drawer: true,
       additional: 'Connection, Cache-Control, Expires, Host, Encodings',
@@ -269,7 +269,7 @@ export const previewNodes = [
   {
     id: '2.3.3',
     type: 'statusCode',
-    position: { x: 14, y: 954 },
+    position: { x: 100, y: 1064 },
     data: { 
       drawer: true,
       additional: '202, 206, 301, 304, 403, 410',
@@ -281,7 +281,7 @@ export const previewNodes = [
   {
     id: '2.3.4',
     type: 'caching',
-    position: { x: 45, y: 1055 },
+    position: { x: 253, y: 1145 },
     data: { 
       additional: 'Cache-Control, Directives, ETag, Last-Modified, Vary',
       description: 'This is the first node',
@@ -293,7 +293,7 @@ export const previewNodes = [
   {
     id: '2.3.5',
     type: 'cookies',
-    position: { x: 260, y: 1053 },
+    position: { x: 360, y: 1080 },
     data: { 
       additional: 'Cookie, Set-Cookie',
       description: 'This is the first node',
@@ -305,7 +305,7 @@ export const previewNodes = [
   {
     id: '2^2.3',
     type: 'pointNode',
-    position: { x: 501, y: 952 },
+    position: { x: 67, y: 982 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -316,7 +316,7 @@ export const previewNodes = [
   {
     id: '3',
     type: 'yearNode',
-    position: { x: 446, y: 1136 },
+    position: { x: 10, y: 1136 },
     data: { 
       label: '2000',
       year: '2000', 
@@ -1051,7 +1051,7 @@ export const previewEdges = [
   {
     id: 'e2.2-2.2.1',
     source: '2.2',
-    sourceHandle: 'top',
+    sourceHandle: 'right',
     target: '2.2.1',
     targetHandle: 'left',
     style: { 
@@ -1123,9 +1123,9 @@ export const previewEdges = [
   {
     id: 'e2^2.1-2.1',
     source: '2^2.1',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.1',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1159,9 +1159,9 @@ export const previewEdges = [
   {
     id: '2.3-2.3.1',
     source: '2.3',
-    sourceHandle: 'top',
+    sourceHandle: 'right',
     target: '2.3.1',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1171,9 +1171,9 @@ export const previewEdges = [
   {
     id: '2.3-2.3.2',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.3.2',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1183,9 +1183,9 @@ export const previewEdges = [
   {
     id: '2.3-2.3.3',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'bottom',
     target: '2.3.3',
-    targetHandle: 'right',
+    targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1195,9 +1195,9 @@ export const previewEdges = [
   {
     id: '2.3-2.3.4',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.3.4',
-    targetHandle: 'right',
+    targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
