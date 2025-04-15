@@ -28,7 +28,7 @@ const Drawer = ({ isOpen, onClose, filePath, breadcrumb }) => {
   const [extractedStyles, setExtractedStyles] = useState("");
   const [loading, setLoading] = useState(true);
 
-  console.log(breadcrumb);
+  // console.log(breadcrumb);
 
   useEffect(() => {
     if (isOpen && filePath) {
