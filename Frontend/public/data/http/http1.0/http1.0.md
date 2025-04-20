@@ -6,40 +6,57 @@ HTTP/1.0, introduced in 1996, was the first standardized version of the HyperTex
 ---
 ## Key Enhancements in HTTP/1.0
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+  <div style="text-align: center;">
+    <figure>
+      <img src="data/http/http1.0/asset/request.png" height="100" width="300" style="border: 2px solid black;">
+      <figcaption>Request</figcaption>
+    </figure>
+  </div>
+  
+  <div style="text-align: center;">
+    <figure>
+      <img src="data/http/http1.0/asset/response.png" height="100" width="300" style="border: 2px solid black;">
+      <figcaption>Response</figcaption>
+    </figure>
+  </div>
+</div>
+
+
 ### 1. Protocol Version Specification
 - Unlike HTTP/0.9, HTTP/1.0 required the version to be explicitly stated in the request line.
-- The request format now included:
+<!-- - The request format now included:
   ```plaintext
   GET /index.html HTTP/1.0
-  ```
+  ``` -->
 - This allowed servers to differentiate between HTTP versions and handle requests accordingly.
 
 ### 2. HTTP Request Methods
-HTTP/1.0 introduced new request methods beyond `GET`, making web interactions more versatile:
-- **POST**: Send data to the server for processing
+- HTTP/1.0 introduced new request methods beyond `GET`, making web interactions more versatile:
+<!-- - **POST**: Send data to the server for processing
 - **HEAD**: Retrieve headers without the response body (useful for checking metadata without downloading content)
 
-These additions allowed HTTP to support more dynamic and interactive web applications.
+These additions allowed HTTP to support more dynamic and interactive web applications. -->
 
 ### 3. HTTP Status Codes
 - HTTP/1.0 introduced standardized **status codes** to inform clients of request outcomes.
-- Example categories:
+<!-- - Example categories:
   - **2xx** – Success (e.g., `200 OK`)
   - **3xx** – Redirection (e.g., `301 Moved Permanently`)
   - **4xx** – Client Errors (e.g., `404 Not Found`)
-  - **5xx** – Server Errors (e.g., `500 Internal Server Error`)
+  - **5xx** – Server Errors (e.g., `500 Internal Server Error`) -->
 
-Previously, errors were communicated by sending an HTML error message, but now status codes allowed better automation and handling.
+- Previously, errors were communicated by sending an HTML error message, but now status codes allowed better automation and handling.
 
 ### 4. HTTP Headers: Metadata for Requests and Responses
-Headers allowed additional information to be sent along with requests and responses, enhancing HTTP’s capabilities:
-- **Client Headers**:
+- Headers allowed additional information to be sent along with requests and responses, enhancing HTTP’s capabilities:
+<!-- - **Client Headers**:
   - `User-Agent`: Identifies the client software making the request.
   - `Accept`: Specifies acceptable content types for the response.
 - **Server Headers**:
   - `Content-Type`: Specifies the file format of the response (`text/html`, `image/png`, etc.).
   - `Content-Length`: Defines the size of the response body.
-  - `Date`: Indicates when the response was generated.
+  - `Date`: Indicates when the response was generated. -->
   
 ### 5. Support for Different File Types
 - HTTP/1.0 introduced support for **non-HTML files** (e.g., images, CSS, JavaScript).
@@ -79,7 +96,7 @@ Content-Type: image/gif
 
 <figure>
   <div align="center">
-    <img src="data/http/http1.0/asset/http1.0.png" height="300" width="500" style="border: 2px solid black;">
+    <img src="data/http/http1.0/asset/http1.0.png" height="100" width="300" style="border: 2px solid black;">
   </div>
   <figcaption style="text-align: center"></figcaption>  
 </figure>
@@ -101,16 +118,15 @@ Content-Type: image/gif
 ## Advantages and Disadvantages of HTTP/1.0
 
 ### ✅ Advantages:
-✔ Introduced HTTP headers for better metadata handling.
-✔ Allowed more file types beyond HTML.
-✔ Introduced HTTP status codes for better error handling.
-✔ Enabled multiple request methods for more flexible web applications.
-✔ Added basic caching mechanisms to optimize performance.
+- Introduced HTTP headers for better metadata handling.
+- Allowed more file types beyond HTML.
+- Introduced HTTP status codes for better error handling.
+- Enabled multiple request methods for more flexible web applications.
+- Added basic caching mechanisms to optimize performance.
 
 ### ❌ Disadvantages:
-✘ Short-lived connections led to inefficiency and high latency.
-✘ Lacked proper support for persistent connections.
-✘ Did not include advanced optimizations found in later versions.
+- Short-lived connections led to inefficiency and high latency.
+- Lacked proper support for persistent connections.
 
 ---
 ## Conclusion
