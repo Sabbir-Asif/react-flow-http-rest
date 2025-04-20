@@ -505,7 +505,7 @@ export const initialNodes = [
     data: { 
       label: 'Introduce RMM',
       year: '2005', 
-      drawer: true,
+      popUp: true,
       description: 'This is the first node',
       filePath: '/data/rest/4.2_RMM.md', 
       breadcrumb: ['2005', 'RMM'],
