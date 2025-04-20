@@ -9,6 +9,7 @@ export const initialNodes = [
       year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
+      // breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
@@ -20,6 +21,7 @@ export const initialNodes = [
       year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
+      // breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
@@ -44,6 +46,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http0.9/http0.9.md', 
+      breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
@@ -55,6 +58,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/http/http0.9/1.1.1_NonPersistent.md', 
+      breadcrumb: ['1990', 'HTTP/0.9', 'Non Persistent'],
     },
   },
   {
@@ -66,6 +70,7 @@ export const initialNodes = [
       label: 'Introduce GET Method',
       description: 'This is the first node',
       filePath: '/data/http/http0.9/1.1.2_GET.md', 
+      breadcrumb: ['1990', 'HTTP/0.9', 'Introduce GET Method'],
     },
   },
   {
@@ -89,6 +94,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2_intro.md', 
+      breadcrumb: ['1990', 'Cookies'],
     },
   },
   {
@@ -101,6 +107,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2.1_session_cookie.md',
+      breadcrumb: ['1990', 'Cookies', 'Session Cookies'],
     },
   },
   {
@@ -135,6 +142,7 @@ export const initialNodes = [
       description: 'This is the first node',
       popUp: true,
       filePath: '/data/CORS/2.1_SameOriginPolicy.md', 
+      breadcrumb: ['1995', 'Same Origin Policy'],
     },
   },
   {
@@ -158,6 +166,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http1.0/http1.0.md', 
+      breadcrumb: ['1995', 'HTTP/1.0'],
     },
   },
   {
@@ -170,6 +179,7 @@ export const initialNodes = [
       additional: '(keep-alive optional)',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.1_KeepAlive.md', 
+      breadcrumb: ['1995', 'HTTP/1.0', 'Non Persistent Connection'],
     },
   },
   {
@@ -181,6 +191,7 @@ export const initialNodes = [
       additional: 'POST, PUT, DELETE, HEAD, OPTIONS, TRACE',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.2_Methods.md', 
+      breadcrumb: ['1995', 'HTTP/1.0', 'Methods']
     },
   },
   {
@@ -192,6 +203,7 @@ export const initialNodes = [
       additional: 'Content-Type, Content-Length, Date',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.3_Content-Type.md', 
+      breadcrumb: ['1995', 'HTTP/1.0', 'Content-Type, Content-Length, Date'],
     },
   },
   {
@@ -203,6 +215,7 @@ export const initialNodes = [
       label: '1xx-5xx introduced',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.4_Status.md', 
+      breadcrumb: ['1995', 'HTTP/1.0', 'Status Codes'],
     },
   },
   {
@@ -214,7 +227,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/caching/2.2.5_pragma.md',
-      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires']
+      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires'],
     },
   },
   {
