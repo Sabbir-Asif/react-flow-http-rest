@@ -285,7 +285,7 @@ export const initialNodes = [
     position: { x: 14, y: 954 },
     data: { 
       drawer: true,
-      additional: '202, 206, 301, 304, 403, 410',
+      additional: '100, 206, 301, 307, 409, 410, 413, 503, 504',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.3_StatusCode.md', 
       breadcrumb: ['1995', 'HTTP/1.1', 'StatusCode']
