@@ -11,7 +11,7 @@ const YearNode = ({ data }) => {
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
 
 
-                <div className="text-5xl font-nunito font-bold opacity-30">
+                <div className="text-5xl font-nunito font-bold text-gray-500">
                     {data.label}
                 </div>
                 <Handle type="source" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
