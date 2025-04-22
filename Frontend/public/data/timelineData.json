@@ -120,7 +120,7 @@
     "connection": "Persistent by default",
     "methods": "-",
     "headers": "Connection, Cache-Control, Expires, Host, Accept-Encoding, Transfer-Encoding",
-    "statusCode": "202, 206, 301, 304, 403, 410",
+    "statusCode": "206,  307, 409, 410, 413, 503, 504",
     "caching": "Cache-Control directives (max-age, no-cache, public), ETag, Last-Modified, Vary",
     "cookies": "Cookie, Set-Cookie",
     "cors": "-",

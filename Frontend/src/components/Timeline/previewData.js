@@ -1,33 +1,31 @@
 
-export const initialNodes = [
+export const previewNodes = [
   {
     id: '0',
     type: 'pointNode',
-    position: { x: 502, y: 230 },
+    position: { x: 65, y: 230 },
     data: { 
       label: 'HTTP',
       year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
-      // breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
     id: '0.1',
     type: 'customNode',
-    position: { x: 469, y: 192 },
+    position: { x: 30, y: 192 },
     data: { 
       label: 'HTTP',
       year: '1990', 
       description: 'This is the first node',
       filePath: '/content/HTTP/0.9.md', 
-      // breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
     id: '1',
     type: 'yearNode',
-    position: { x: 446, y: 272 },
+    position: { x: 10, y: 272 },
     data: { 
       label: '1990',
       year: '1990', 
@@ -38,7 +36,7 @@ export const initialNodes = [
   {
     id: '1.1',
     type: 'http',
-    position: { x: 613, y: 383 },
+    position: { x: 110, y: 350 },
     data: { 
       label: 'HTTP',
       version: '0.9',
@@ -46,37 +44,34 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http0.9/http0.9.md', 
-      breadcrumb: ['1990', 'HTTP/0.9'],
     },
   },
   {
     id: '1.1.1',
     type: 'connection',
-    position: { x: 853, y: 287 },
+    position: { x: 253, y: 280 },
     data: { 
       label: 'Non Persistent',
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/http/http0.9/1.1.1_NonPersistent.md', 
-      breadcrumb: ['1990', 'HTTP/0.9', 'Non Persistent'],
     },
   },
   {
     id: '1.1.2',
     type: 'method',
-    position: { x: 931, y: 394 },
+    position: { x: 253, y: 376 },
     data: { 
       drawer: true,
       label: 'Introduce GET Method',
       description: 'This is the first node',
       filePath: '/data/http/http0.9/1.1.2_GET.md', 
-      breadcrumb: ['1990', 'HTTP/0.9', 'Introduce GET Method'],
     },
   },
   {
     id: '1^1.1',
     type: 'pointNode',
-    position: { x: 503, y: 398 },
+    position: { x: 67, y: 364 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -87,33 +82,31 @@ export const initialNodes = [
   {
     id: '1.2',
     type: 'eventNode',
-    position: { x: 360, y: 407 },
+    position: { x: 110, y: 415 },
     data: { 
       label: 'Netscape Introduced Cookies',
       year: '1990', 
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2_intro.md', 
-      breadcrumb: ['1990', 'Cookies'],
     },
   },
   {
     id: '1.2.1',
     type: 'cookies',
-    position: { x: 77, y: 404 },
+    position: { x: 253, y: 454 },
     data: { 
       label: 'Session Cookies',
       year: '1990', 
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/cookies/1.2.1_session_cookie.md',
-      breadcrumb: ['1990', 'Cookies', 'Session Cookies'],
     },
   },
   {
     id: '1^1.2',
     type: 'pointNode',
-    position: { x: 501, y: 453 },
+    position: { x: 67, y: 460 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -124,7 +117,7 @@ export const initialNodes = [
   {
     id: '2',
     type: 'yearNode',
-    position: { x: 446, y: 526 },
+    position: { x: 10, y: 526 },
     data: { 
       label: '1995',
       year: '1995', 
@@ -135,20 +128,19 @@ export const initialNodes = [
   {
     id: '2.1',
     type: 'eventNode',
-    position: { x: 318, y: 600 },
+    position: { x: 110, y: 570 },
     data: { 
       label: 'Same Origin Policy',
       year: '1995', 
       description: 'This is the first node',
       popUp: true,
       filePath: '/data/CORS/2.1_SameOriginPolicy.md', 
-      breadcrumb: ['1995', 'Same Origin Policy'],
     },
   },
   {
     id: '2^2.1',
     type: 'pointNode',
-    position: { x: 501, y: 646 },
+    position: { x: 67, y: 616 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -159,81 +151,76 @@ export const initialNodes = [
   {
     id: '2.2',
     type: 'http',
-    position: { x: 628, y: 649 },
+    position: { x: 110, y: 679 },
     data: { 
       label: 'HTTP',
       version: '1.0',
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/http/http1.0/http1.0.md', 
-      breadcrumb: ['1995', 'HTTP/1.0'],
     },
   },
   {
     id: '2.2.1',
     type: 'connection',
-    position: { x: 794, y: 526 },
+    position: { x: 294, y: 556 },
     data: { 
       drawer: true,
       label: 'Non Persistent',
       additional: '(keep-alive optional)',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.1_KeepAlive.md', 
-      breadcrumb: ['1995', 'HTTP/1.0', 'Non Persistent Connection'],
     },
   },
   {
     id: '2.2.2',
     type: 'method',
-    position: { x: 923, y: 614 },
+    position: { x: 423, y: 644 },
     data: { 
       drawer: true,
       additional: 'POST, PUT, DELETE, HEAD, OPTIONS, TRACE',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.2_Methods.md', 
-      breadcrumb: ['1995', 'HTTP/1.0', 'Methods']
     },
   },
   {
     id: '2.2.3',
     type: 'header',
-    position: { x: 892, y: 715 },
+    position: { x: 392, y: 745 },
     data: { 
       drawer: true,
       additional: 'Content-Type, Content-Length, Date',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.3_Content-Type.md', 
-      breadcrumb: ['1995', 'HTTP/1.0', 'Content-Type, Content-Length, Date'],
     },
   },
   {
     id: '2.2.4',
     type: 'statusCode',
-    position: { x: 824, y: 814 },
+    position: { x: 324, y: 824 },
     data: { 
       drawer: true,
       label: '1xx-5xx introduced',
       description: 'This is the first node',
       filePath: 'data/http/http1.0/2.2.4_Status.md', 
-      breadcrumb: ['1995', 'HTTP/1.0', 'Status Codes'],
     },
   },
   {
     id: '2.2.5',
     type: 'caching',
-    position: { x: 597, y: 764 },
+    position: { x: 97, y: 794 },
     data: { 
       label: 'Pragma, Expires',
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/caching/2.2.5_pragma.md',
-      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires'],
+      breadcrumb: ['1995', 'HTTP/1.0', 'Pragma, Expires']
     },
   },
   {
     id: '2^2.2',
     type: 'pointNode',
-    position: { x: 503, y: 663 },
+    position: { x: 67, y: 693 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -244,7 +231,7 @@ export const initialNodes = [
   {
     id: '2.3',
     type: 'http',
-    position: { x: 310, y: 938 },
+    position: { x: 110, y: 968 },
     data: { 
       label: 'HTTP',
       version: '1.1',
@@ -257,7 +244,7 @@ export const initialNodes = [
   {
     id: '2.3.1',
     type: 'connection',
-    position: { x: 134, y: 753 },
+    position: { x: 253, y: 893 },
     data: { 
       drawer: true,
       label: 'Persistent',
@@ -270,7 +257,7 @@ export const initialNodes = [
   {
     id: '2.3.2',
     type: 'header',
-    position: { x: 2, y: 857 },
+    position: { x: 373, y: 982 },
     data: { 
       drawer: true,
       additional: 'Connection, Cache-Control, Expires, Host, Encodings',
@@ -282,10 +269,10 @@ export const initialNodes = [
   {
     id: '2.3.3',
     type: 'statusCode',
-    position: { x: 14, y: 954 },
+    position: { x: 100, y: 1064 },
     data: { 
       drawer: true,
-      additional: '100, 206, 301, 307, 409, 410, 413, 503, 504',
+      additional: '202, 206, 301, 304, 403, 410',
       description: 'This is the first node',
       filePath: 'data/http/http1.1/2.3.3_StatusCode.md', 
       breadcrumb: ['1995', 'HTTP/1.1', 'StatusCode']
@@ -294,7 +281,7 @@ export const initialNodes = [
   {
     id: '2.3.4',
     type: 'caching',
-    position: { x: 45, y: 1055 },
+    position: { x: 253, y: 1145 },
     data: { 
       additional: 'Cache-Control, Directives, ETag, Last-Modified, Vary',
       description: 'This is the first node',
@@ -306,7 +293,7 @@ export const initialNodes = [
   {
     id: '2.3.5',
     type: 'cookies',
-    position: { x: 260, y: 1053 },
+    position: { x: 360, y: 1080 },
     data: { 
       additional: 'Cookie, Set-Cookie',
       description: 'This is the first node',
@@ -318,7 +305,7 @@ export const initialNodes = [
   {
     id: '2^2.3',
     type: 'pointNode',
-    position: { x: 501, y: 952 },
+    position: { x: 67, y: 982 },
     data: { 
       label: 'HTTP',
       year: '1990', 
@@ -329,7 +316,7 @@ export const initialNodes = [
   {
     id: '3',
     type: 'yearNode',
-    position: { x: 446, y: 1136 },
+    position: { x: 10, y: 1136 },
     data: { 
       label: '2000',
       year: '2000', 
@@ -505,7 +492,7 @@ export const initialNodes = [
     data: { 
       label: 'Introduce RMM',
       year: '2005', 
-      popUp: true,
+      drawer: true,
       description: 'This is the first node',
       filePath: '/data/rest/4.2_RMM.md', 
       breadcrumb: ['2005', 'RMM'],
@@ -952,7 +939,7 @@ export const initialNodes = [
   
 ];
 
-export const initialEdges = [
+export const previewEdges = [
   // {
   //   id: 'e0-0.1',
   //   source: '0',
@@ -1028,9 +1015,9 @@ export const initialEdges = [
   {
     id: 'e1.2-1.2.1',
     source: '1.2',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '1.2.1',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1040,9 +1027,9 @@ export const initialEdges = [
   {
     id: 'e1^1.2-1.2',
     source: '1^1.2',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '1.2',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1064,7 +1051,7 @@ export const initialEdges = [
   {
     id: 'e2.2-2.2.1',
     source: '2.2',
-    sourceHandle: 'top',
+    sourceHandle: 'right',
     target: '2.2.1',
     targetHandle: 'left',
     style: { 
@@ -1136,9 +1123,9 @@ export const initialEdges = [
   {
     id: 'e2^2.1-2.1',
     source: '2^2.1',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.1',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1172,9 +1159,9 @@ export const initialEdges = [
   {
     id: '2.3-2.3.1',
     source: '2.3',
-    sourceHandle: 'top',
+    sourceHandle: 'right',
     target: '2.3.1',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1184,9 +1171,9 @@ export const initialEdges = [
   {
     id: '2.3-2.3.2',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.3.2',
-    targetHandle: 'right',
+    targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1196,9 +1183,9 @@ export const initialEdges = [
   {
     id: '2.3-2.3.3',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'bottom',
     target: '2.3.3',
-    targetHandle: 'right',
+    targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
@@ -1208,9 +1195,9 @@ export const initialEdges = [
   {
     id: '2.3-2.3.4',
     source: '2.3',
-    sourceHandle: 'left',
+    sourceHandle: 'right',
     target: '2.3.4',
-    targetHandle: 'right',
+    targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
       stroke: '#333333' 
