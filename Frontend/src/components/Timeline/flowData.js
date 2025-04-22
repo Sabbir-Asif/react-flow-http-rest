@@ -828,7 +828,7 @@ export const initialNodes = [
     type: 'eventNode',
     position: { x: 300, y: 2850 },
     data: { 
-      label: 'Introduce Edge Caching',
+      label: 'Edge Caching',
       year: '2020', 
       popUp: true,
       description: 'This is the first node',
@@ -840,7 +840,7 @@ export const initialNodes = [
     type: 'caching',
     position: { x: 30, y: 2800 },
     data: { 
-      label: 'Why Edge Caching?',
+      label: 'Why Edge Caching',
       year: '2020', 
       drawer: true,
       description: 'This is the first node',
