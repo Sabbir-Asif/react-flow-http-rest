@@ -833,6 +833,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/EdgeCaching/7.1.md', 
+      breadcrumb: ['2020', 'Edge Caching']
     },
   },
   {
@@ -845,6 +846,7 @@ export const initialNodes = [
       drawer: true,
       description: 'This is the first node',
       filePath: '/data/EdgeCaching/7.1.1.md', 
+      breadcrumb: ['2020', 'Edge Caching', 'Why Edge Caching needs']
     },
   },
   {
@@ -858,6 +860,7 @@ export const initialNodes = [
       description: 'This is the first node',
       drawer: true,
       filePath: '/data/EdgeCaching/7.1.2.md',
+      breadcrumb: ['2020', 'Edge Caching', 'Third Party Cookies']
     },
   },
   {
@@ -882,6 +885,7 @@ export const initialNodes = [
       popUp: true,
       description: 'This is the first node',
       filePath: '/data/HTTP_3/7.2_markdown.md', 
+      breadcrumb: ['2020', 'HTTP_3']
     },
   },
   {
@@ -895,6 +899,7 @@ export const initialNodes = [
       year: '2020', 
       description: 'This is the first node',
       filePath: '/data/HTTP_3/7.2.1_QUIC.md', 
+      breadcrumb: ['2020', 'HTTP_3', 'QUIC']
     },
   },
   {
@@ -908,6 +913,7 @@ export const initialNodes = [
       year: '2020', 
       description: 'This is the first node',
       filePath: '/data/HTTP_3/7.2.1.2_zeroRTT.md', 
+      breadcrumb: ['2020', 'HTTP_3', 'QUIC','0-RTT']
     },
   },
 
@@ -922,7 +928,8 @@ export const initialNodes = [
       drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/data/HTTP_3/7.2.1.1_Multiplexing.md', 
+      filePath: '/data/HTTP_3/7.2.1.1_Multiplexing.md',
+      breadcrumb: ['2020', 'HTTP_3','QUIC','MULTIPLEXING'] 
     },
   },
   {
@@ -935,7 +942,8 @@ export const initialNodes = [
       drawer: true,
       year: '2020', 
       description: 'This is the first node',
-      filePath: '/data/HTTP_3/7.2.3_Stream_Prioritization.md', 
+      filePath: '/data/HTTP_3/7.2.3_Stream_Prioritization.md',
+      breadcrumb: ['2020', 'HTTP_3', 'Stream Prioritization'] 
     },
   },
   {
