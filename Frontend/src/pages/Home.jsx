@@ -3,6 +3,7 @@ import Header from "../components/Home/Header";
 import Navbar from "../components/Home/Navbar";
 import ColorMechanism from "../components/Timeline/ColorMechanism";
 import FlowCanvas from "../components/Timeline/FlowCanvas";
+import Background from "../components/Home/Background";
 
 const Home = () => {
     return (
