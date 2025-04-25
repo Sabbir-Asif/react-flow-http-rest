@@ -7,20 +7,28 @@ import Background from "../components/Home/Background";
 
 const Home = () => {
     return (
-        <div className="bg-[#FDFAF6]">
-            <Navbar />
-            <Header />
-            <div className="max-w-6xl mx-auto relative">
-                <div className="w-full flex justify-center relative">
-                    <div className="w-[1152px] relative">
-                        <div className="absolute top-12 left-20 z-10">
-                            <ColorMechanism />
+        <div className="relative min-h-screen">
+            {/* Background takes up the full viewport */}
+            <div className="fixed inset-0 z-0">
+                <Background />
+            </div>
+            
+            {/* Content overlaid on top of the background */}
+            <div className="relative z-10">
+                <Navbar />
+                <Header />
+                <div className="max-w-6xl mx-auto relative">
+                    <div className="w-full flex justify-center relative">
+                        <div className="w-[1152px] relative">
+                            <div className="absolute top-12 left-20 z-10">
+                                <ColorMechanism />
+                            </div>
+                            <FlowCanvas />
                         </div>
-                        <FlowCanvas />
                     </div>
                 </div>
+                <Footer></Footer>
             </div>
-            <Footer></Footer>
         </div>
     );
 };

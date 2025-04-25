@@ -97,7 +97,7 @@ const FlowCanvas = () => {
           proOptions={{ hideAttribution: true }}
           style={{ width: '100%', height: '100%' }}
         >
-          <Background color="#FDFAF6" variant="dots" gap={0} size={0} />
+          {/* <Background color="#FDFAF6" variant="dots" gap={0} size={0} /> */}
         </ReactFlow>
       </div>
 
