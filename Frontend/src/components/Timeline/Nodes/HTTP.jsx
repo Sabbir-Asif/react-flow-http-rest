@@ -10,9 +10,9 @@ const HTTP = ({ data }) => {
                 <Handle type="target" id="top" position={Position.Top} style={{ visibility: 'hidden' }} />
                 <Handle type="target" id="bottom" position={Position.Bottom} style={{ visibility: 'hidden' }} />
                 <div>
-                    <span className='font-nunito text-2xl font-bold bg-slate-300
+                    <span className='font-nunito text-2xl font-bold bg-slate-700
                      text-transparent bg-clip-text'>{data.label}</span>
-                     <span className='font-nunito text-2xl font-bold bg-slate-300
+                     <span className='font-nunito text-2xl font-bold bg-slate-700
                      text-transparent bg-clip-text'>/{data?.version}</span>
                 </div>
                 <Handle type="source" id="right" position={Position.Right} style={{ visibility: 'hidden' }} />
