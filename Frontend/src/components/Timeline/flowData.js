@@ -854,7 +854,7 @@ export const initialNodes = [
     type: 'cookies',
     position: { x: 30, y: 2920 },
     data: { 
-      label: 'Third Party Cookies',
+      label: '3rd Party Cookies Blocked',
       year: '2020', 
       drawer: true,
       description: 'This is the first node',
@@ -969,7 +969,7 @@ export const initialEdges = [
   //   targetHandle: 'top',
   //   style: { 
   //     strokeWidth: 2, 
-  //     stroke: '#333333' 
+  //     stroke: '#cccccc' 
   //   },
   //   animated: false,
   // },
@@ -981,7 +981,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -993,7 +993,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1005,7 +1005,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1017,7 +1017,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1029,7 +1029,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1041,7 +1041,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1053,7 +1053,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1065,7 +1065,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1077,7 +1077,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1089,7 +1089,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1101,7 +1101,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1113,7 +1113,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1125,7 +1125,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1137,7 +1137,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1149,7 +1149,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1161,7 +1161,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1173,7 +1173,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1185,7 +1185,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1197,7 +1197,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1209,7 +1209,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1221,7 +1221,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1233,7 +1233,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1245,7 +1245,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1257,7 +1257,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1269,7 +1269,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1281,7 +1281,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1293,7 +1293,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1305,7 +1305,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1317,7 +1317,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1329,7 +1329,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1341,7 +1341,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1353,7 +1353,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1365,7 +1365,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1377,7 +1377,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1389,7 +1389,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1401,7 +1401,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1413,7 +1413,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1425,7 +1425,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1437,7 +1437,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1449,7 +1449,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1461,7 +1461,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1473,7 +1473,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1485,7 +1485,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1497,7 +1497,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1509,7 +1509,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1521,7 +1521,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1533,7 +1533,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1545,7 +1545,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1557,7 +1557,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1569,7 +1569,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1581,7 +1581,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1593,7 +1593,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1605,7 +1605,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1617,7 +1617,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1629,7 +1629,7 @@ export const initialEdges = [
     targetHandle: 'top',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: false,
   },
@@ -1641,7 +1641,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1653,7 +1653,7 @@ export const initialEdges = [
     targetHandle: 'right',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1665,7 +1665,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1677,7 +1677,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1689,7 +1689,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
@@ -1701,7 +1701,7 @@ export const initialEdges = [
     targetHandle: 'left',
     style: { 
       strokeWidth: 2, 
-      stroke: '#333333' 
+      stroke: '#cccccc' 
     },
     animated: true,
   },
