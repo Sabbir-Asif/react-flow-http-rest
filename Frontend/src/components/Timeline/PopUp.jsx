@@ -55,7 +55,7 @@ const PopUp = ({ isOpen, onClose, filePath, breadcrumb }) => {
   return (
     <dialog className={`modal ${isOpen ? 'modal-open' : ''}`}>
       <div className="modal-box w-11/12 max-w-5xl max-h-[90vh] bg-[#FDFAF6]">
-        <div className="breadcrumbs text-md font-medium font-nunito ml-8 md:ml-12">
+        <div className="breadcrumbs text-md text-gray-900 font-medium font-nunito ml-8 md:ml-12">
           <ul>
             {
               breadcrumb?.map(bc => <li>{bc}</li>)
