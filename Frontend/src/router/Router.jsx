@@ -7,10 +7,10 @@ const Router = createBrowserRouter([
     path: "/",
     element: <Home />
   },
-  {
-    path: "/preview",
-    element: <Preview />
-  }
+  // {
+  //   path: "/preview",
+  //   element: <Preview />
+  // }
 ]);
 
 export default Router;
