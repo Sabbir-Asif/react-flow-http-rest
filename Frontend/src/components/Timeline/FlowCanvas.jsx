@@ -55,10 +55,10 @@ const FlowCanvas = () => {
         setDrawerOpen(true);
         setPopUpOpen(false);
       } else {
-        alert(`No data available for this node`);
+        console.log(`No data available for this node`);
       }
     } else {
-      alert(`No data available for this node`);
+     console.log(`No data available for this node`);
     }
   };
 
